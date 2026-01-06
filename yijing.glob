@@ -1,0 +1,2314 @@
+DIGEST 085959c026f9c5c1366f4a27ea7f7e72
+Fyijing
+R2570:2583 Coq.Lists.List <> <> lib
+R2601:2613 Coq.Bool.Bool <> <> lib
+R2631:2645 Coq.Arith.Arith <> <> lib
+R2663:2679 Coq.NArith.BinNat <> <> lib
+R2697:2714 Coq.Vectors.Vector <> <> lib
+R2732:2748 Coq.QArith.QArith <> <> lib
+R2766:2768 Coq.micromega.Lia <> <> lib
+R2778:2790 Coq.Lists.List ListNotations <> mod
+R2800:2814 Coq.Vectors.Vector VectorNotations <> mod
+ind 2878:2881 <> Line
+constr 2897:2900 <> Yang
+constr 2956:2958 <> Yin
+R2904:2907 yijing <> Line:1 ind
+R2962:2965 yijing <> Line:1 ind
+scheme 2878:2881 <> Line_rect
+scheme 2878:2881 <> Line_ind
+scheme 2878:2881 <> Line_rec
+scheme 2878:2881 <> Line_sind
+def 3028:3035 <> Line_dec
+R3054:3057 yijing <> Line ind
+binder 3046:3047 <> l1:3
+binder 3049:3050 <> l2:4
+R3060:3060 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3068:3072 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3081:3081 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R3063:3065 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3061:3062 yijing <> l1:3 var
+R3066:3067 yijing <> l2:4 var
+R3075:3078 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3073:3074 yijing <> l1:3 var
+R3079:3080 yijing <> l2:4 var
+ind 3173:3182 <> MovingLine
+constr 3198:3203 <> OldYin
+constr 3262:3270 <> YoungYang
+constr 3311:3318 <> YoungYin
+constr 3359:3365 <> OldYang
+R3207:3216 yijing <> MovingLine:5 ind
+R3274:3283 yijing <> MovingLine:5 ind
+R3322:3331 yijing <> MovingLine:5 ind
+R3369:3378 yijing <> MovingLine:5 ind
+scheme 3173:3182 <> MovingLine_rect
+scheme 3173:3182 <> MovingLine_ind
+scheme 3173:3182 <> MovingLine_rec
+scheme 3173:3182 <> MovingLine_sind
+def 3431:3444 <> line_of_moving
+R3451:3460 yijing <> MovingLine ind
+binder 3447:3447 <> m:7
+R3465:3468 yijing <> Line ind
+R3481:3481 yijing <> m:7 var
+R3492:3497 yijing <> OldYin constr
+R3502:3504 yijing <> Yin constr
+R3510:3518 yijing <> YoungYang constr
+R3523:3526 yijing <> Yang constr
+R3532:3539 yijing <> YoungYin constr
+R3544:3546 yijing <> Yin constr
+R3552:3558 yijing <> OldYang constr
+R3563:3566 yijing <> Yang constr
+def 3587:3597 <> is_changing
+R3604:3613 yijing <> MovingLine ind
+binder 3600:3600 <> m:9
+R3618:3621 Coq.Init.Datatypes <> bool ind
+R3634:3634 yijing <> m:9 var
+R3645:3650 yijing <> OldYin constr
+R3655:3658 Coq.Init.Datatypes <> true constr
+R3664:3670 yijing <> OldYang constr
+R3675:3678 Coq.Init.Datatypes <> true constr
+R3689:3693 Coq.Init.Datatypes <> false constr
+def 3714:3727 <> transform_line
+R3734:3743 yijing <> MovingLine ind
+binder 3730:3730 <> m:11
+R3748:3751 yijing <> Line ind
+R3764:3764 yijing <> m:11 var
+R3775:3780 yijing <> OldYin constr
+R3785:3788 yijing <> Yang constr
+R3794:3800 yijing <> OldYang constr
+R3805:3807 yijing <> Yin constr
+R3813:3821 yijing <> YoungYang constr
+R3826:3829 yijing <> Yang constr
+R3835:3842 yijing <> YoungYin constr
+R3847:3849 yijing <> Yin constr
+def 3896:3906 <> line_to_bit
+R3913:3916 yijing <> Line ind
+binder 3909:3909 <> l:13
+R3921:3924 Coq.Init.Datatypes <> bool ind
+R3937:3937 yijing <> l:13 var
+R3948:3951 yijing <> Yang constr
+R3956:3959 Coq.Init.Datatypes <> true constr
+R3965:3967 yijing <> Yin constr
+R3972:3976 Coq.Init.Datatypes <> false constr
+def 3997:4007 <> bit_to_line
+R4014:4017 Coq.Init.Datatypes <> bool ind
+binder 4010:4010 <> b:15
+R4022:4025 yijing <> Line ind
+R4035:4035 yijing <> b:15 var
+R4052:4054 yijing <> Yin constr
+R4042:4045 yijing <> Yang constr
+prf 4064:4081 <> line_bit_roundtrip
+binder 4092:4092 <> l:16
+R4122:4124 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4095:4105 yijing <> bit_to_line def
+R4108:4118 yijing <> line_to_bit def
+R4120:4120 yijing <> l:16 var
+R4125:4125 yijing <> l:16 var
+prf 4173:4190 <> bit_line_roundtrip
+binder 4201:4201 <> b:17
+R4231:4233 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4204:4214 yijing <> line_to_bit def
+R4217:4227 yijing <> bit_to_line def
+R4229:4229 yijing <> b:17 var
+R4234:4234 yijing <> b:17 var
+def 4314:4320 <> Trigram
+R4325:4332 Coq.Vectors.Vector <> t ind
+R4334:4337 yijing <> Line ind
+def 4354:4367 <> trigram_to_nat
+R4374:4380 yijing <> Trigram def
+binder 4370:4370 <> t:18
+R4385:4387 Coq.Init.Datatypes <> nat ind
+R4404:4414 yijing <> line_to_bit def
+R4417:4426 Coq.Vectors.Vector <> nth def
+R4430:4435 Coq.Vectors.Fin <> F1 constr
+R4428:4428 yijing <> t:18 var
+binder 4398:4399 <> b0:19
+R4453:4463 yijing <> line_to_bit def
+R4466:4475 Coq.Vectors.Vector <> nth def
+R4480:4485 Coq.Vectors.Fin <> FS constr
+R4487:4492 Coq.Vectors.Fin <> F1 constr
+R4477:4477 yijing <> t:18 var
+binder 4447:4448 <> b1:20
+R4511:4521 yijing <> line_to_bit def
+R4524:4533 Coq.Vectors.Vector <> nth def
+R4538:4543 Coq.Vectors.Fin <> FS constr
+R4546:4551 Coq.Vectors.Fin <> FS constr
+R4553:4558 Coq.Vectors.Fin <> F1 constr
+R4535:4535 yijing <> t:18 var
+binder 4505:4506 <> b2:21
+R4613:4616 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4636:4636 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4568:4568 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4588:4592 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4612:4612 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4572:4573 yijing <> b2:21 var
+R4596:4597 yijing <> b1:20 var
+R4620:4621 yijing <> b0:19 var
+def 4651:4654 <> Qian
+R4658:4664 yijing <> Trigram def
+R4669:4669 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4674:4675 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4680:4681 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4686:4686 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4670:4673 yijing <> Yang constr
+R4676:4679 yijing <> Yang constr
+R4682:4685 yijing <> Yang constr
+def 4718:4720 <> Dui
+R4724:4730 yijing <> Trigram def
+R4735:4735 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4739:4740 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4745:4746 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4751:4751 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4736:4738 yijing <> Yin constr
+R4741:4744 yijing <> Yang constr
+R4747:4750 yijing <> Yang constr
+def 4783:4784 <> Li
+R4788:4794 yijing <> Trigram def
+R4799:4799 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4804:4805 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4809:4810 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4815:4815 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4800:4803 yijing <> Yang constr
+R4806:4808 yijing <> Yin constr
+R4811:4814 yijing <> Yang constr
+def 4848:4851 <> Zhen
+R4855:4861 yijing <> Trigram def
+R4866:4866 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4870:4871 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4875:4876 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4881:4881 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4867:4869 yijing <> Yin constr
+R4872:4874 yijing <> Yin constr
+R4877:4880 yijing <> Yang constr
+def 4916:4918 <> Xun
+R4922:4928 yijing <> Trigram def
+R4933:4933 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4938:4939 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4944:4945 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4949:4949 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4934:4937 yijing <> Yang constr
+R4940:4943 yijing <> Yang constr
+R4946:4948 yijing <> Yin constr
+def 4981:4983 <> Kan
+R4987:4993 yijing <> Trigram def
+R4998:4998 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5002:5003 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5008:5009 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5013:5013 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R4999:5001 yijing <> Yin constr
+R5004:5007 yijing <> Yang constr
+R5010:5012 yijing <> Yin constr
+def 5047:5049 <> Gen
+R5053:5059 yijing <> Trigram def
+R5064:5064 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5069:5070 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5074:5075 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5079:5079 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5065:5068 yijing <> Yang constr
+R5071:5073 yijing <> Yin constr
+R5076:5078 yijing <> Yin constr
+def 5116:5118 <> Kun
+R5122:5128 yijing <> Trigram def
+R5133:5133 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5137:5138 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5142:5143 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5147:5147 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5134:5136 yijing <> Yin constr
+R5139:5141 yijing <> Yin constr
+R5144:5146 yijing <> Yin constr
+def 5183:5194 <> all_trigrams
+R5198:5201 Coq.Init.Datatypes <> list ind
+R5203:5209 yijing <> Trigram def
+R5216:5216 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5220:5221 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5225:5226 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5230:5231 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5235:5236 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5241:5242 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5245:5246 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5250:5251 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5256:5256 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R5217:5219 yijing <> Kun def
+R5222:5224 yijing <> Gen def
+R5227:5229 yijing <> Kan def
+R5232:5234 yijing <> Xun def
+R5237:5240 yijing <> Zhen def
+R5243:5244 yijing <> Li def
+R5247:5249 yijing <> Dui def
+R5252:5255 yijing <> Qian def
+prf 5268:5280 <> trigram_count
+R5303:5305 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5284:5289 Coq.Init.Datatypes <> length def
+R5291:5302 yijing <> all_trigrams def
+def 5346:5363 <> trigram_complement
+R5370:5376 yijing <> Trigram def
+binder 5366:5366 <> t:22
+R5381:5387 yijing <> Trigram def
+R5394:5403 Coq.Vectors.Vector <> map def
+R5459:5459 yijing <> t:22 var
+binder 5410:5410 <> l:23
+R5421:5421 yijing <> l:23 var
+R5428:5431 yijing <> Yang constr
+R5436:5438 yijing <> Yin constr
+R5442:5444 yijing <> Yin constr
+R5449:5452 yijing <> Yang constr
+prf 5471:5489 <> qian_kun_complement
+R5516:5518 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5493:5510 yijing <> trigram_complement def
+R5512:5515 yijing <> Qian def
+R5519:5521 yijing <> Kun def
+prf 5558:5576 <> kun_qian_complement
+R5602:5604 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5580:5597 yijing <> trigram_complement def
+R5599:5601 yijing <> Kun def
+R5605:5608 yijing <> Qian def
+prf 5643:5668 <> line_complement_involution
+binder 5679:5679 <> l:25
+R5767:5769 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5696:5696 yijing <> l:25 var
+R5703:5706 yijing <> Yang constr
+R5711:5713 yijing <> Yin constr
+R5717:5719 yijing <> Yin constr
+R5724:5727 yijing <> Yang constr
+R5738:5741 yijing <> Yang constr
+R5746:5748 yijing <> Yin constr
+R5752:5754 yijing <> Yin constr
+R5759:5762 yijing <> Yang constr
+R5770:5770 yijing <> l:25 var
+prf 5818:5846 <> trigram_complement_involution
+binder 5857:5857 <> t:27
+R5901:5903 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5860:5877 yijing <> trigram_complement def
+R5880:5897 yijing <> trigram_complement def
+R5899:5899 yijing <> t:27 var
+R5904:5904 yijing <> t:27 var
+R5935:5941 yijing <> Trigram def
+R5958:5970 Coq.Vectors.Vector <> caseS' def
+R5958:5970 Coq.Vectors.Vector <> caseS' def
+R5999:6011 Coq.Vectors.Vector <> caseS' def
+R5999:6011 Coq.Vectors.Vector <> caseS' def
+R6041:6053 Coq.Vectors.Vector <> caseS' def
+R6041:6053 Coq.Vectors.Vector <> caseS' def
+R6094:6105 Coq.Vectors.Vector <> case0 def
+R6094:6105 Coq.Vectors.Vector <> case0 def
+def 6188:6195 <> Hexagram
+R6200:6207 Coq.Vectors.Vector <> t ind
+R6209:6212 yijing <> Line ind
+def 6229:6243 <> hexagram_to_nat
+R6250:6257 yijing <> Hexagram def
+binder 6246:6246 <> h:28
+R6262:6264 Coq.Init.Datatypes <> nat ind
+R6281:6291 yijing <> line_to_bit def
+R6294:6303 Coq.Vectors.Vector <> nth def
+R6307:6312 Coq.Vectors.Fin <> F1 constr
+R6305:6305 yijing <> h:28 var
+binder 6275:6276 <> b0:29
+R6330:6340 yijing <> line_to_bit def
+R6343:6352 Coq.Vectors.Vector <> nth def
+R6357:6362 Coq.Vectors.Fin <> FS constr
+R6364:6369 Coq.Vectors.Fin <> F1 constr
+R6354:6354 yijing <> h:28 var
+binder 6324:6325 <> b1:30
+R6388:6398 yijing <> line_to_bit def
+R6401:6410 Coq.Vectors.Vector <> nth def
+R6415:6420 Coq.Vectors.Fin <> FS constr
+R6423:6428 Coq.Vectors.Fin <> FS constr
+R6430:6435 Coq.Vectors.Fin <> F1 constr
+R6412:6412 yijing <> h:28 var
+binder 6382:6383 <> b2:31
+R6455:6465 yijing <> line_to_bit def
+R6468:6477 Coq.Vectors.Vector <> nth def
+R6482:6487 Coq.Vectors.Fin <> FS constr
+R6490:6495 Coq.Vectors.Fin <> FS constr
+R6498:6503 Coq.Vectors.Fin <> FS constr
+R6505:6510 Coq.Vectors.Fin <> F1 constr
+R6479:6479 yijing <> h:28 var
+binder 6449:6450 <> b3:32
+R6531:6541 yijing <> line_to_bit def
+R6544:6553 Coq.Vectors.Vector <> nth def
+R6558:6563 Coq.Vectors.Fin <> FS constr
+R6566:6571 Coq.Vectors.Fin <> FS constr
+R6574:6579 Coq.Vectors.Fin <> FS constr
+R6582:6587 Coq.Vectors.Fin <> FS constr
+R6589:6594 Coq.Vectors.Fin <> F1 constr
+R6555:6555 yijing <> h:28 var
+binder 6525:6526 <> b4:33
+R6616:6626 yijing <> line_to_bit def
+R6629:6638 Coq.Vectors.Vector <> nth def
+R6643:6648 Coq.Vectors.Fin <> FS constr
+R6651:6656 Coq.Vectors.Fin <> FS constr
+R6659:6664 Coq.Vectors.Fin <> FS constr
+R6667:6672 Coq.Vectors.Fin <> FS constr
+R6675:6680 Coq.Vectors.Fin <> FS constr
+R6682:6687 Coq.Vectors.Fin <> F1 constr
+R6640:6640 yijing <> h:28 var
+binder 6610:6611 <> b5:34
+R6821:6824 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6844:6844 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6797:6800 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6820:6820 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6771:6776 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6796:6796 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6747:6750 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6770:6770 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6700:6700 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6721:6725 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6746:6746 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R6704:6705 yijing <> b5:34 var
+R6729:6730 yijing <> b4:33 var
+R6754:6755 yijing <> b3:32 var
+R6780:6781 yijing <> b2:31 var
+R6804:6805 yijing <> b1:30 var
+R6828:6829 yijing <> b0:29 var
+def 6859:6873 <> nat_to_hexagram
+R6880:6882 Coq.Init.Datatypes <> nat ind
+binder 6876:6876 <> n:35
+R6887:6894 yijing <> Hexagram def
+R6911:6921 yijing <> bit_to_line def
+R6924:6934 Coq.Arith.PeanoNat Nat testbit def
+R6936:6936 yijing <> n:35 var
+binder 6905:6906 <> b0:36
+R6956:6966 yijing <> bit_to_line def
+R6969:6979 Coq.Arith.PeanoNat Nat testbit def
+R6981:6981 yijing <> n:35 var
+binder 6950:6951 <> b1:37
+R7001:7011 yijing <> bit_to_line def
+R7014:7024 Coq.Arith.PeanoNat Nat testbit def
+R7026:7026 yijing <> n:35 var
+binder 6995:6996 <> b2:38
+R7046:7056 yijing <> bit_to_line def
+R7059:7069 Coq.Arith.PeanoNat Nat testbit def
+R7071:7071 yijing <> n:35 var
+binder 7040:7041 <> b3:39
+R7091:7101 yijing <> bit_to_line def
+R7104:7114 Coq.Arith.PeanoNat Nat testbit def
+R7116:7116 yijing <> n:35 var
+binder 7085:7086 <> b4:40
+R7136:7146 yijing <> bit_to_line def
+R7149:7159 Coq.Arith.PeanoNat Nat testbit def
+R7161:7161 yijing <> n:35 var
+binder 7130:7131 <> b5:41
+R7171:7171 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7174:7175 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7178:7179 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7182:7183 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7186:7187 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7190:7191 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7194:7194 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7172:7173 yijing <> b0:36 var
+R7176:7177 yijing <> b1:37 var
+R7180:7181 yijing <> b2:38 var
+R7184:7185 yijing <> b3:39 var
+R7188:7189 yijing <> b4:40 var
+R7192:7193 yijing <> b5:41 var
+prf 7206:7227 <> hexagram_nat_roundtrip
+binder 7238:7238 <> n:42
+R7247:7250 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7242:7244 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R7241:7241 yijing <> n:42 var
+R7286:7288 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7251:7265 yijing <> hexagram_to_nat def
+R7268:7282 yijing <> nat_to_hexagram def
+R7284:7284 yijing <> n:42 var
+R7289:7289 yijing <> n:42 var
+prf 7379:7400 <> nat_hexagram_roundtrip
+binder 7411:7411 <> h:43
+R7449:7451 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7414:7428 yijing <> nat_to_hexagram def
+R7431:7445 yijing <> hexagram_to_nat def
+R7447:7447 yijing <> h:43 var
+R7452:7452 yijing <> h:43 var
+R7483:7490 yijing <> Hexagram def
+R7507:7519 Coq.Vectors.Vector <> caseS' def
+R7507:7519 Coq.Vectors.Vector <> caseS' def
+R7548:7560 Coq.Vectors.Vector <> caseS' def
+R7548:7560 Coq.Vectors.Vector <> caseS' def
+R7590:7602 Coq.Vectors.Vector <> caseS' def
+R7590:7602 Coq.Vectors.Vector <> caseS' def
+R7632:7644 Coq.Vectors.Vector <> caseS' def
+R7632:7644 Coq.Vectors.Vector <> caseS' def
+R7674:7686 Coq.Vectors.Vector <> caseS' def
+R7674:7686 Coq.Vectors.Vector <> caseS' def
+R7716:7728 Coq.Vectors.Vector <> caseS' def
+R7716:7728 Coq.Vectors.Vector <> caseS' def
+R7769:7780 Coq.Vectors.Vector <> case0 def
+R7769:7780 Coq.Vectors.Vector <> case0 def
+def 7848:7860 <> lower_trigram
+R7867:7874 yijing <> Hexagram def
+binder 7863:7863 <> h:44
+R7879:7885 yijing <> Trigram def
+R7892:7892 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7912:7916 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7945:7949 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7987:7987 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7893:7902 Coq.Vectors.Vector <> nth def
+R7906:7911 Coq.Vectors.Fin <> F1 constr
+R7904:7904 yijing <> h:44 var
+R7917:7926 Coq.Vectors.Vector <> nth def
+R7931:7936 Coq.Vectors.Fin <> FS constr
+R7938:7943 Coq.Vectors.Fin <> F1 constr
+R7928:7928 yijing <> h:44 var
+R7950:7959 Coq.Vectors.Vector <> nth def
+R7964:7969 Coq.Vectors.Fin <> FS constr
+R7972:7977 Coq.Vectors.Fin <> FS constr
+R7979:7984 Coq.Vectors.Fin <> F1 constr
+R7961:7961 yijing <> h:44 var
+def 8002:8014 <> upper_trigram
+R8021:8028 yijing <> Hexagram def
+binder 8017:8017 <> h:45
+R8033:8039 yijing <> Trigram def
+R8046:8046 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8093:8097 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8153:8157 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8222:8222 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8047:8056 Coq.Vectors.Vector <> nth def
+R8061:8066 Coq.Vectors.Fin <> FS constr
+R8069:8074 Coq.Vectors.Fin <> FS constr
+R8077:8082 Coq.Vectors.Fin <> FS constr
+R8084:8089 Coq.Vectors.Fin <> F1 constr
+R8058:8058 yijing <> h:45 var
+R8098:8107 Coq.Vectors.Vector <> nth def
+R8112:8117 Coq.Vectors.Fin <> FS constr
+R8120:8125 Coq.Vectors.Fin <> FS constr
+R8128:8133 Coq.Vectors.Fin <> FS constr
+R8136:8141 Coq.Vectors.Fin <> FS constr
+R8143:8148 Coq.Vectors.Fin <> F1 constr
+R8109:8109 yijing <> h:45 var
+R8158:8167 Coq.Vectors.Vector <> nth def
+R8172:8177 Coq.Vectors.Fin <> FS constr
+R8180:8185 Coq.Vectors.Fin <> FS constr
+R8188:8193 Coq.Vectors.Fin <> FS constr
+R8196:8201 Coq.Vectors.Fin <> FS constr
+R8204:8209 Coq.Vectors.Fin <> FS constr
+R8211:8216 Coq.Vectors.Fin <> F1 constr
+R8169:8169 yijing <> h:45 var
+def 8237:8256 <> hexagram_of_trigrams
+R8273:8279 yijing <> Trigram def
+binder 8259:8263 <> lower:46
+binder 8265:8269 <> upper:47
+R8284:8291 yijing <> Hexagram def
+R8298:8310 Coq.Vectors.Vector <> append def
+R8318:8322 yijing <> upper:47 var
+R8312:8316 yijing <> lower:46 var
+prf 8334:8354 <> trigram_decomposition
+binder 8365:8365 <> h:48
+R8426:8428 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8370:8389 yijing <> hexagram_of_trigrams def
+R8392:8404 yijing <> lower_trigram def
+R8406:8406 yijing <> h:48 var
+R8410:8422 yijing <> upper_trigram def
+R8424:8424 yijing <> h:48 var
+R8429:8429 yijing <> h:48 var
+R8460:8467 yijing <> Hexagram def
+R8484:8496 Coq.Vectors.Vector <> caseS' def
+R8484:8496 Coq.Vectors.Vector <> caseS' def
+R8525:8537 Coq.Vectors.Vector <> caseS' def
+R8525:8537 Coq.Vectors.Vector <> caseS' def
+R8567:8579 Coq.Vectors.Vector <> caseS' def
+R8567:8579 Coq.Vectors.Vector <> caseS' def
+R8609:8621 Coq.Vectors.Vector <> caseS' def
+R8609:8621 Coq.Vectors.Vector <> caseS' def
+R8651:8663 Coq.Vectors.Vector <> caseS' def
+R8651:8663 Coq.Vectors.Vector <> caseS' def
+R8693:8705 Coq.Vectors.Vector <> caseS' def
+R8693:8705 Coq.Vectors.Vector <> caseS' def
+R8746:8757 Coq.Vectors.Vector <> case0 def
+R8746:8757 Coq.Vectors.Vector <> case0 def
+mod 8837:8843 <> KingWen
+def 8860:8868 KingWen hex1_Qian
+R8872:8879 yijing <> Hexagram def
+R8884:8884 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8889:8890 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8895:8896 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8901:8902 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8907:8908 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8913:8914 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8919:8919 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8885:8888 yijing <> Yang constr
+R8891:8894 yijing <> Yang constr
+R8897:8900 yijing <> Yang constr
+R8903:8906 yijing <> Yang constr
+R8909:8912 yijing <> Yang constr
+R8915:8918 yijing <> Yang constr
+def 8935:8942 KingWen hex2_Kun
+R8946:8953 yijing <> Hexagram def
+R8958:8958 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8962:8963 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8967:8968 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8972:8973 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8977:8978 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8982:8983 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8987:8987 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8959:8961 yijing <> Yin constr
+R8964:8966 yijing <> Yin constr
+R8969:8971 yijing <> Yin constr
+R8974:8976 yijing <> Yin constr
+R8979:8981 yijing <> Yin constr
+R8984:8986 yijing <> Yin constr
+def 9003:9011 KingWen hex3_Zhun
+R9015:9022 yijing <> Hexagram def
+R9027:9027 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9032:9033 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9037:9038 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9042:9043 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9047:9048 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9053:9054 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9058:9058 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9028:9031 yijing <> Yang constr
+R9034:9036 yijing <> Yin constr
+R9039:9041 yijing <> Yin constr
+R9044:9046 yijing <> Yin constr
+R9049:9052 yijing <> Yang constr
+R9055:9057 yijing <> Yin constr
+def 9074:9082 KingWen hex4_Meng
+R9086:9093 yijing <> Hexagram def
+R9098:9098 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9102:9103 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9108:9109 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9113:9114 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9119:9120 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9124:9125 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9129:9129 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9099:9101 yijing <> Yin constr
+R9104:9107 yijing <> Yang constr
+R9110:9112 yijing <> Yin constr
+R9115:9118 yijing <> Yang constr
+R9121:9123 yijing <> Yin constr
+R9126:9128 yijing <> Yin constr
+def 9145:9151 KingWen hex5_Xu
+R9155:9162 yijing <> Hexagram def
+R9167:9167 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9172:9173 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9178:9179 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9184:9185 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9189:9190 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9195:9196 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9200:9200 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9168:9171 yijing <> Yang constr
+R9174:9177 yijing <> Yang constr
+R9180:9183 yijing <> Yang constr
+R9186:9188 yijing <> Yin constr
+R9191:9194 yijing <> Yang constr
+R9197:9199 yijing <> Yin constr
+def 9216:9224 KingWen hex6_Song
+R9228:9235 yijing <> Hexagram def
+R9240:9240 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9244:9245 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9250:9251 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9255:9256 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9261:9262 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9267:9268 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9273:9273 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9241:9243 yijing <> Yin constr
+R9246:9249 yijing <> Yang constr
+R9252:9254 yijing <> Yin constr
+R9257:9260 yijing <> Yang constr
+R9263:9266 yijing <> Yang constr
+R9269:9272 yijing <> Yang constr
+def 9289:9296 KingWen hex7_Shi
+R9300:9307 yijing <> Hexagram def
+R9312:9312 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9316:9317 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9322:9323 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9327:9328 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9332:9333 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9337:9338 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9342:9342 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9313:9315 yijing <> Yin constr
+R9318:9321 yijing <> Yang constr
+R9324:9326 yijing <> Yin constr
+R9329:9331 yijing <> Yin constr
+R9334:9336 yijing <> Yin constr
+R9339:9341 yijing <> Yin constr
+def 9358:9364 KingWen hex8_Bi
+R9368:9375 yijing <> Hexagram def
+R9380:9380 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9384:9385 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9389:9390 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9394:9395 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9399:9400 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9405:9406 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9410:9410 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9381:9383 yijing <> Yin constr
+R9386:9388 yijing <> Yin constr
+R9391:9393 yijing <> Yin constr
+R9396:9398 yijing <> Yin constr
+R9401:9404 yijing <> Yang constr
+R9407:9409 yijing <> Yin constr
+def 9426:9437 KingWen hex9_XiaoChu
+R9441:9448 yijing <> Hexagram def
+R9453:9453 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9458:9459 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9464:9465 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9470:9471 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9476:9477 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9482:9483 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9487:9487 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9454:9457 yijing <> Yang constr
+R9460:9463 yijing <> Yang constr
+R9466:9469 yijing <> Yang constr
+R9472:9475 yijing <> Yang constr
+R9478:9481 yijing <> Yang constr
+R9484:9486 yijing <> Yin constr
+def 9503:9510 KingWen hex10_Lu
+R9514:9521 yijing <> Hexagram def
+R9526:9526 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9530:9531 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9536:9537 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9542:9543 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9548:9549 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9554:9555 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9560:9560 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9527:9529 yijing <> Yin constr
+R9532:9535 yijing <> Yang constr
+R9538:9541 yijing <> Yang constr
+R9544:9547 yijing <> Yang constr
+R9550:9553 yijing <> Yang constr
+R9556:9559 yijing <> Yang constr
+def 9576:9584 KingWen hex11_Tai
+R9588:9595 yijing <> Hexagram def
+R9600:9600 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9605:9606 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9611:9612 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9617:9618 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9622:9623 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9627:9628 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9632:9632 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9601:9604 yijing <> Yang constr
+R9607:9610 yijing <> Yang constr
+R9613:9616 yijing <> Yang constr
+R9619:9621 yijing <> Yin constr
+R9624:9626 yijing <> Yin constr
+R9629:9631 yijing <> Yin constr
+def 9648:9655 KingWen hex12_Pi
+R9659:9666 yijing <> Hexagram def
+R9671:9671 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9675:9676 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9680:9681 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9685:9686 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9691:9692 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9697:9698 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9703:9703 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9672:9674 yijing <> Yin constr
+R9677:9679 yijing <> Yin constr
+R9682:9684 yijing <> Yin constr
+R9687:9690 yijing <> Yang constr
+R9693:9696 yijing <> Yang constr
+R9699:9702 yijing <> Yang constr
+def 9719:9731 KingWen hex13_TongRen
+R9735:9742 yijing <> Hexagram def
+R9747:9747 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9752:9753 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9758:9759 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9764:9765 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9770:9771 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9775:9776 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9781:9781 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9748:9751 yijing <> Yang constr
+R9754:9757 yijing <> Yang constr
+R9760:9763 yijing <> Yang constr
+R9766:9769 yijing <> Yang constr
+R9772:9774 yijing <> Yin constr
+R9777:9780 yijing <> Yang constr
+def 9797:9807 KingWen hex14_DaYou
+R9811:9818 yijing <> Hexagram def
+R9823:9823 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9828:9829 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9833:9834 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9839:9840 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9845:9846 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9851:9852 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9857:9857 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9824:9827 yijing <> Yang constr
+R9830:9832 yijing <> Yin constr
+R9835:9838 yijing <> Yang constr
+R9841:9844 yijing <> Yang constr
+R9847:9850 yijing <> Yang constr
+R9853:9856 yijing <> Yang constr
+def 9873:9883 KingWen hex15_Qian2
+R9887:9894 yijing <> Hexagram def
+R9899:9899 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9903:9904 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9908:9909 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9913:9914 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9919:9920 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9924:9925 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9929:9929 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9900:9902 yijing <> Yin constr
+R9905:9907 yijing <> Yin constr
+R9910:9912 yijing <> Yin constr
+R9915:9918 yijing <> Yang constr
+R9921:9923 yijing <> Yin constr
+R9926:9928 yijing <> Yin constr
+def 9945:9952 KingWen hex16_Yu
+R9956:9963 yijing <> Hexagram def
+R9968:9968 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9972:9973 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9977:9978 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9983:9984 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9988:9989 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9993:9994 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9998:9998 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R9969:9971 yijing <> Yin constr
+R9974:9976 yijing <> Yin constr
+R9979:9982 yijing <> Yang constr
+R9985:9987 yijing <> Yin constr
+R9990:9992 yijing <> Yin constr
+R9995:9997 yijing <> Yin constr
+def 10014:10022 KingWen hex17_Sui
+R10026:10033 yijing <> Hexagram def
+R10038:10038 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10042:10043 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10048:10049 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10054:10055 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10059:10060 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10064:10065 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10070:10070 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10039:10041 yijing <> Yin constr
+R10044:10047 yijing <> Yang constr
+R10050:10053 yijing <> Yang constr
+R10056:10058 yijing <> Yin constr
+R10061:10063 yijing <> Yin constr
+R10066:10069 yijing <> Yang constr
+def 10086:10093 KingWen hex18_Gu
+R10097:10104 yijing <> Hexagram def
+R10109:10109 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10114:10115 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10119:10120 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10124:10125 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10130:10131 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10136:10137 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10141:10141 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10110:10113 yijing <> Yang constr
+R10116:10118 yijing <> Yin constr
+R10121:10123 yijing <> Yin constr
+R10126:10129 yijing <> Yang constr
+R10132:10135 yijing <> Yang constr
+R10138:10140 yijing <> Yin constr
+def 10157:10165 KingWen hex19_Lin
+R10169:10176 yijing <> Hexagram def
+R10181:10181 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10186:10187 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10192:10193 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10197:10198 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10202:10203 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10207:10208 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10212:10212 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10182:10185 yijing <> Yang constr
+R10188:10191 yijing <> Yang constr
+R10194:10196 yijing <> Yin constr
+R10199:10201 yijing <> Yin constr
+R10204:10206 yijing <> Yin constr
+R10209:10211 yijing <> Yin constr
+def 10228:10237 KingWen hex20_Guan
+R10241:10248 yijing <> Hexagram def
+R10253:10253 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10257:10258 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10262:10263 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10267:10268 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10272:10273 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10278:10279 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10284:10284 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10254:10256 yijing <> Yin constr
+R10259:10261 yijing <> Yin constr
+R10264:10266 yijing <> Yin constr
+R10269:10271 yijing <> Yin constr
+R10274:10277 yijing <> Yang constr
+R10280:10283 yijing <> Yang constr
+def 10300:10310 KingWen hex21_ShiHe
+R10314:10321 yijing <> Hexagram def
+R10326:10326 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10331:10332 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10336:10337 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10342:10343 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10348:10349 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10353:10354 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10358:10358 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10327:10330 yijing <> Yang constr
+R10333:10335 yijing <> Yin constr
+R10338:10341 yijing <> Yang constr
+R10344:10347 yijing <> Yang constr
+R10350:10352 yijing <> Yin constr
+R10355:10357 yijing <> Yin constr
+def 10374:10382 KingWen hex22_Bi2
+R10386:10393 yijing <> Hexagram def
+R10398:10398 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10402:10403 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10407:10408 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10413:10414 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10419:10420 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10424:10425 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10430:10430 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10399:10401 yijing <> Yin constr
+R10404:10406 yijing <> Yin constr
+R10409:10412 yijing <> Yang constr
+R10415:10418 yijing <> Yang constr
+R10421:10423 yijing <> Yin constr
+R10426:10429 yijing <> Yang constr
+def 10446:10453 KingWen hex23_Bo
+R10457:10464 yijing <> Hexagram def
+R10469:10469 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10473:10474 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10478:10479 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10483:10484 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10488:10489 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10493:10494 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10499:10499 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10470:10472 yijing <> Yin constr
+R10475:10477 yijing <> Yin constr
+R10480:10482 yijing <> Yin constr
+R10485:10487 yijing <> Yin constr
+R10490:10492 yijing <> Yin constr
+R10495:10498 yijing <> Yang constr
+def 10515:10522 KingWen hex24_Fu
+R10526:10533 yijing <> Hexagram def
+R10538:10538 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10543:10544 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10548:10549 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10553:10554 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10558:10559 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10563:10564 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10568:10568 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10539:10542 yijing <> Yang constr
+R10545:10547 yijing <> Yin constr
+R10550:10552 yijing <> Yin constr
+R10555:10557 yijing <> Yin constr
+R10560:10562 yijing <> Yin constr
+R10565:10567 yijing <> Yin constr
+def 10584:10595 KingWen hex25_WuWang
+R10599:10606 yijing <> Hexagram def
+R10611:10611 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10616:10617 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10622:10623 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10628:10629 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10634:10635 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10639:10640 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10644:10644 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10612:10615 yijing <> Yang constr
+R10618:10621 yijing <> Yang constr
+R10624:10627 yijing <> Yang constr
+R10630:10633 yijing <> Yang constr
+R10636:10638 yijing <> Yin constr
+R10641:10643 yijing <> Yin constr
+def 10660:10670 KingWen hex26_DaChu
+R10674:10681 yijing <> Hexagram def
+R10686:10686 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10691:10692 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10696:10697 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10701:10702 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10707:10708 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10713:10714 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10719:10719 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10687:10690 yijing <> Yang constr
+R10693:10695 yijing <> Yin constr
+R10698:10700 yijing <> Yin constr
+R10703:10706 yijing <> Yang constr
+R10709:10712 yijing <> Yang constr
+R10715:10718 yijing <> Yang constr
+def 10735:10742 KingWen hex27_Yi
+R10746:10753 yijing <> Hexagram def
+R10758:10758 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10763:10764 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10768:10769 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10773:10774 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10778:10779 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10783:10784 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10789:10789 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10759:10762 yijing <> Yang constr
+R10765:10767 yijing <> Yin constr
+R10770:10772 yijing <> Yin constr
+R10775:10777 yijing <> Yin constr
+R10780:10782 yijing <> Yin constr
+R10785:10788 yijing <> Yang constr
+def 10805:10815 KingWen hex28_DaGuo
+R10819:10826 yijing <> Hexagram def
+R10831:10831 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10835:10836 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10841:10842 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10847:10848 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10853:10854 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10859:10860 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10864:10864 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10832:10834 yijing <> Yin constr
+R10837:10840 yijing <> Yang constr
+R10843:10846 yijing <> Yang constr
+R10849:10852 yijing <> Yang constr
+R10855:10858 yijing <> Yang constr
+R10861:10863 yijing <> Yin constr
+def 10880:10888 KingWen hex29_Kan
+R10892:10899 yijing <> Hexagram def
+R10904:10904 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10908:10909 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10914:10915 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10919:10920 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10924:10925 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10930:10931 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10935:10935 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10905:10907 yijing <> Yin constr
+R10910:10913 yijing <> Yang constr
+R10916:10918 yijing <> Yin constr
+R10921:10923 yijing <> Yin constr
+R10926:10929 yijing <> Yang constr
+R10932:10934 yijing <> Yin constr
+def 10951:10958 KingWen hex30_Li
+R10962:10969 yijing <> Hexagram def
+R10974:10974 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10979:10980 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10984:10985 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10990:10991 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10996:10997 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11001:11002 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11007:11007 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R10975:10978 yijing <> Yang constr
+R10981:10983 yijing <> Yin constr
+R10986:10989 yijing <> Yang constr
+R10992:10995 yijing <> Yang constr
+R10998:11000 yijing <> Yin constr
+R11003:11006 yijing <> Yang constr
+def 11023:11032 KingWen hex31_Xian
+R11036:11043 yijing <> Hexagram def
+R11048:11048 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11052:11053 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11058:11059 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11064:11065 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11070:11071 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11075:11076 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11080:11080 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11049:11051 yijing <> Yin constr
+R11054:11057 yijing <> Yang constr
+R11060:11063 yijing <> Yang constr
+R11066:11069 yijing <> Yang constr
+R11072:11074 yijing <> Yin constr
+R11077:11079 yijing <> Yin constr
+def 11096:11105 KingWen hex32_Heng
+R11109:11116 yijing <> Hexagram def
+R11121:11121 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11125:11126 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11130:11131 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11136:11137 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11142:11143 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11148:11149 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11153:11153 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11122:11124 yijing <> Yin constr
+R11127:11129 yijing <> Yin constr
+R11132:11135 yijing <> Yang constr
+R11138:11141 yijing <> Yang constr
+R11144:11147 yijing <> Yang constr
+R11150:11152 yijing <> Yin constr
+def 11169:11177 KingWen hex33_Dun
+R11181:11188 yijing <> Hexagram def
+R11193:11193 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11198:11199 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11204:11205 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11210:11211 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11216:11217 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11221:11222 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11226:11226 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11194:11197 yijing <> Yang constr
+R11200:11203 yijing <> Yang constr
+R11206:11209 yijing <> Yang constr
+R11212:11215 yijing <> Yang constr
+R11218:11220 yijing <> Yin constr
+R11223:11225 yijing <> Yin constr
+def 11242:11255 KingWen hex34_DaZhuang
+R11259:11266 yijing <> Hexagram def
+R11271:11271 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11275:11276 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11280:11281 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11286:11287 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11292:11293 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11298:11299 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11304:11304 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11272:11274 yijing <> Yin constr
+R11277:11279 yijing <> Yin constr
+R11282:11285 yijing <> Yang constr
+R11288:11291 yijing <> Yang constr
+R11294:11297 yijing <> Yang constr
+R11300:11303 yijing <> Yang constr
+def 11320:11328 KingWen hex35_Jin
+R11332:11339 yijing <> Hexagram def
+R11344:11344 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11348:11349 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11353:11354 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11358:11359 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11364:11365 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11369:11370 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11375:11375 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11345:11347 yijing <> Yin constr
+R11350:11352 yijing <> Yin constr
+R11355:11357 yijing <> Yin constr
+R11360:11363 yijing <> Yang constr
+R11366:11368 yijing <> Yin constr
+R11371:11374 yijing <> Yang constr
+def 11391:11402 KingWen hex36_MingYi
+R11406:11413 yijing <> Hexagram def
+R11418:11418 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11423:11424 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11428:11429 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11434:11435 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11439:11440 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11444:11445 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11449:11449 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11419:11422 yijing <> Yang constr
+R11425:11427 yijing <> Yin constr
+R11430:11433 yijing <> Yang constr
+R11436:11438 yijing <> Yin constr
+R11441:11443 yijing <> Yin constr
+R11446:11448 yijing <> Yin constr
+def 11465:11476 KingWen hex37_JiaRen
+R11480:11487 yijing <> Hexagram def
+R11492:11492 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11497:11498 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11503:11504 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11508:11509 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11514:11515 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11519:11520 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11525:11525 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11493:11496 yijing <> Yang constr
+R11499:11502 yijing <> Yang constr
+R11505:11507 yijing <> Yin constr
+R11510:11513 yijing <> Yang constr
+R11516:11518 yijing <> Yin constr
+R11521:11524 yijing <> Yang constr
+def 11541:11549 KingWen hex38_Kui
+R11553:11560 yijing <> Hexagram def
+R11565:11565 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11570:11571 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11575:11576 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11581:11582 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11586:11587 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11592:11593 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11598:11598 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11566:11569 yijing <> Yang constr
+R11572:11574 yijing <> Yin constr
+R11577:11580 yijing <> Yang constr
+R11583:11585 yijing <> Yin constr
+R11588:11591 yijing <> Yang constr
+R11594:11597 yijing <> Yang constr
+def 11614:11623 KingWen hex39_Jian
+R11627:11634 yijing <> Hexagram def
+R11639:11639 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11643:11644 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11649:11650 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11654:11655 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11660:11661 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11665:11666 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11670:11670 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11640:11642 yijing <> Yin constr
+R11645:11648 yijing <> Yang constr
+R11651:11653 yijing <> Yin constr
+R11656:11659 yijing <> Yang constr
+R11662:11664 yijing <> Yin constr
+R11667:11669 yijing <> Yin constr
+def 11686:11694 KingWen hex40_Xie
+R11698:11705 yijing <> Hexagram def
+R11710:11710 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11714:11715 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11719:11720 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11725:11726 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11730:11731 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11736:11737 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11741:11741 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11711:11713 yijing <> Yin constr
+R11716:11718 yijing <> Yin constr
+R11721:11724 yijing <> Yang constr
+R11727:11729 yijing <> Yin constr
+R11732:11735 yijing <> Yang constr
+R11738:11740 yijing <> Yin constr
+def 11757:11765 KingWen hex41_Sun
+R11769:11776 yijing <> Hexagram def
+R11781:11781 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11786:11787 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11791:11792 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11796:11797 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11801:11802 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11807:11808 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11813:11813 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11782:11785 yijing <> Yang constr
+R11788:11790 yijing <> Yin constr
+R11793:11795 yijing <> Yin constr
+R11798:11800 yijing <> Yin constr
+R11803:11806 yijing <> Yang constr
+R11809:11812 yijing <> Yang constr
+def 11829:11837 KingWen hex42_Yi2
+R11841:11848 yijing <> Hexagram def
+R11853:11853 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11858:11859 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11864:11865 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11869:11870 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11874:11875 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11879:11880 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11885:11885 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11854:11857 yijing <> Yang constr
+R11860:11863 yijing <> Yang constr
+R11866:11868 yijing <> Yin constr
+R11871:11873 yijing <> Yin constr
+R11876:11878 yijing <> Yin constr
+R11881:11884 yijing <> Yang constr
+def 11901:11910 KingWen hex43_Guai
+R11914:11921 yijing <> Hexagram def
+R11926:11926 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11930:11931 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11936:11937 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11942:11943 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11948:11949 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11954:11955 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11960:11960 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R11927:11929 yijing <> Yin constr
+R11932:11935 yijing <> Yang constr
+R11938:11941 yijing <> Yang constr
+R11944:11947 yijing <> Yang constr
+R11950:11953 yijing <> Yang constr
+R11956:11959 yijing <> Yang constr
+def 11976:11984 KingWen hex44_Gou
+R11988:11995 yijing <> Hexagram def
+R12000:12000 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12005:12006 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12011:12012 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12017:12018 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12023:12024 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12029:12030 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12034:12034 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12001:12004 yijing <> Yang constr
+R12007:12010 yijing <> Yang constr
+R12013:12016 yijing <> Yang constr
+R12019:12022 yijing <> Yang constr
+R12025:12028 yijing <> Yang constr
+R12031:12033 yijing <> Yin constr
+def 12050:12058 KingWen hex45_Cui
+R12062:12069 yijing <> Hexagram def
+R12074:12074 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12078:12079 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12083:12084 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12088:12089 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12093:12094 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12099:12100 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12105:12105 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12075:12077 yijing <> Yin constr
+R12080:12082 yijing <> Yin constr
+R12085:12087 yijing <> Yin constr
+R12090:12092 yijing <> Yin constr
+R12095:12098 yijing <> Yang constr
+R12101:12104 yijing <> Yang constr
+def 12121:12131 KingWen hex46_Sheng
+R12135:12142 yijing <> Hexagram def
+R12147:12147 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12151:12152 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12157:12158 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12162:12163 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12167:12168 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12172:12173 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12177:12177 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12148:12150 yijing <> Yin constr
+R12153:12156 yijing <> Yang constr
+R12159:12161 yijing <> Yin constr
+R12164:12166 yijing <> Yin constr
+R12169:12171 yijing <> Yin constr
+R12174:12176 yijing <> Yin constr
+def 12193:12202 KingWen hex47_Kun2
+R12206:12213 yijing <> Hexagram def
+R12218:12218 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12222:12223 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12228:12229 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12233:12234 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12238:12239 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12244:12245 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12250:12250 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12219:12221 yijing <> Yin constr
+R12224:12227 yijing <> Yang constr
+R12230:12232 yijing <> Yin constr
+R12235:12237 yijing <> Yin constr
+R12240:12243 yijing <> Yang constr
+R12246:12249 yijing <> Yang constr
+def 12266:12275 KingWen hex48_Jing
+R12279:12286 yijing <> Hexagram def
+R12291:12291 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12295:12296 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12301:12302 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12306:12307 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12312:12313 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12318:12319 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12323:12323 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12292:12294 yijing <> Yin constr
+R12297:12300 yijing <> Yang constr
+R12303:12305 yijing <> Yin constr
+R12308:12311 yijing <> Yang constr
+R12314:12317 yijing <> Yang constr
+R12320:12322 yijing <> Yin constr
+def 12339:12346 KingWen hex49_Ge
+R12350:12357 yijing <> Hexagram def
+R12362:12362 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12367:12368 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12372:12373 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12378:12379 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12383:12384 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12389:12390 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12395:12395 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12363:12366 yijing <> Yang constr
+R12369:12371 yijing <> Yin constr
+R12374:12377 yijing <> Yang constr
+R12380:12382 yijing <> Yin constr
+R12385:12388 yijing <> Yang constr
+R12391:12394 yijing <> Yang constr
+def 12411:12420 KingWen hex50_Ding
+R12424:12431 yijing <> Hexagram def
+R12436:12436 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12441:12442 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12447:12448 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12452:12453 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12458:12459 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12463:12464 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12469:12469 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12437:12440 yijing <> Yang constr
+R12443:12446 yijing <> Yang constr
+R12449:12451 yijing <> Yin constr
+R12454:12457 yijing <> Yang constr
+R12460:12462 yijing <> Yin constr
+R12465:12468 yijing <> Yang constr
+def 12485:12494 KingWen hex51_Zhen
+R12498:12505 yijing <> Hexagram def
+R12510:12510 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12514:12515 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12519:12520 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12525:12526 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12530:12531 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12535:12536 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12541:12541 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12511:12513 yijing <> Yin constr
+R12516:12518 yijing <> Yin constr
+R12521:12524 yijing <> Yang constr
+R12527:12529 yijing <> Yin constr
+R12532:12534 yijing <> Yin constr
+R12537:12540 yijing <> Yang constr
+def 12557:12565 KingWen hex52_Gen
+R12569:12576 yijing <> Hexagram def
+R12581:12581 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12586:12587 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12591:12592 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12596:12597 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12602:12603 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12607:12608 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12612:12612 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12582:12585 yijing <> Yang constr
+R12588:12590 yijing <> Yin constr
+R12593:12595 yijing <> Yin constr
+R12598:12601 yijing <> Yang constr
+R12604:12606 yijing <> Yin constr
+R12609:12611 yijing <> Yin constr
+def 12628:12638 KingWen hex53_Jian2
+R12642:12649 yijing <> Hexagram def
+R12654:12654 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12659:12660 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12665:12666 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12670:12671 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12676:12677 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12681:12682 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12686:12686 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12655:12658 yijing <> Yang constr
+R12661:12664 yijing <> Yang constr
+R12667:12669 yijing <> Yin constr
+R12672:12675 yijing <> Yang constr
+R12678:12680 yijing <> Yin constr
+R12683:12685 yijing <> Yin constr
+def 12702:12713 KingWen hex54_GuiMei
+R12717:12724 yijing <> Hexagram def
+R12729:12729 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12733:12734 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12738:12739 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12744:12745 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12749:12750 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12755:12756 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12761:12761 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12730:12732 yijing <> Yin constr
+R12735:12737 yijing <> Yin constr
+R12740:12743 yijing <> Yang constr
+R12746:12748 yijing <> Yin constr
+R12751:12754 yijing <> Yang constr
+R12757:12760 yijing <> Yang constr
+def 12777:12786 KingWen hex55_Feng
+R12790:12797 yijing <> Hexagram def
+R12802:12802 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12806:12807 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12811:12812 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12817:12818 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12823:12824 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12828:12829 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12834:12834 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12803:12805 yijing <> Yin constr
+R12808:12810 yijing <> Yin constr
+R12813:12816 yijing <> Yang constr
+R12819:12822 yijing <> Yang constr
+R12825:12827 yijing <> Yin constr
+R12830:12833 yijing <> Yang constr
+def 12850:12858 KingWen hex56_Lu2
+R12862:12869 yijing <> Hexagram def
+R12874:12874 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12879:12880 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12884:12885 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12890:12891 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12896:12897 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12901:12902 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12906:12906 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12875:12878 yijing <> Yang constr
+R12881:12883 yijing <> Yin constr
+R12886:12889 yijing <> Yang constr
+R12892:12895 yijing <> Yang constr
+R12898:12900 yijing <> Yin constr
+R12903:12905 yijing <> Yin constr
+def 12922:12930 KingWen hex57_Xun
+R12934:12941 yijing <> Hexagram def
+R12946:12946 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12951:12952 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12957:12958 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12962:12963 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12968:12969 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12974:12975 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12979:12979 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R12947:12950 yijing <> Yang constr
+R12953:12956 yijing <> Yang constr
+R12959:12961 yijing <> Yin constr
+R12964:12967 yijing <> Yang constr
+R12970:12973 yijing <> Yang constr
+R12976:12978 yijing <> Yin constr
+def 12995:13003 KingWen hex58_Dui
+R13007:13014 yijing <> Hexagram def
+R13019:13019 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13023:13024 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13029:13030 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13035:13036 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13040:13041 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13046:13047 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13052:13052 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13020:13022 yijing <> Yin constr
+R13025:13028 yijing <> Yang constr
+R13031:13034 yijing <> Yang constr
+R13037:13039 yijing <> Yin constr
+R13042:13045 yijing <> Yang constr
+R13048:13051 yijing <> Yang constr
+def 13068:13077 KingWen hex59_Huan
+R13081:13088 yijing <> Hexagram def
+R13093:13093 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13097:13098 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13103:13104 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13108:13109 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13114:13115 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13120:13121 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13125:13125 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13094:13096 yijing <> Yin constr
+R13099:13102 yijing <> Yang constr
+R13105:13107 yijing <> Yin constr
+R13110:13113 yijing <> Yang constr
+R13116:13119 yijing <> Yang constr
+R13122:13124 yijing <> Yin constr
+def 13141:13149 KingWen hex60_Jie
+R13153:13160 yijing <> Hexagram def
+R13165:13165 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13169:13170 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13175:13176 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13180:13181 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13185:13186 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13191:13192 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13197:13197 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13166:13168 yijing <> Yin constr
+R13171:13174 yijing <> Yang constr
+R13177:13179 yijing <> Yin constr
+R13182:13184 yijing <> Yin constr
+R13187:13190 yijing <> Yang constr
+R13193:13196 yijing <> Yang constr
+def 13213:13225 KingWen hex61_ZhongFu
+R13229:13236 yijing <> Hexagram def
+R13241:13241 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13246:13247 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13252:13253 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13257:13258 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13262:13263 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13268:13269 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13274:13274 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13242:13245 yijing <> Yang constr
+R13248:13251 yijing <> Yang constr
+R13254:13256 yijing <> Yin constr
+R13259:13261 yijing <> Yin constr
+R13264:13267 yijing <> Yang constr
+R13270:13273 yijing <> Yang constr
+def 13290:13302 KingWen hex62_XiaoGuo
+R13306:13313 yijing <> Hexagram def
+R13318:13318 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13322:13323 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13327:13328 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13333:13334 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13339:13340 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13344:13345 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13349:13349 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13319:13321 yijing <> Yin constr
+R13324:13326 yijing <> Yin constr
+R13329:13332 yijing <> Yang constr
+R13335:13338 yijing <> Yang constr
+R13341:13343 yijing <> Yin constr
+R13346:13348 yijing <> Yin constr
+def 13365:13374 KingWen hex63_Jiji
+R13378:13385 yijing <> Hexagram def
+R13390:13390 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13395:13396 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13400:13401 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13406:13407 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13411:13412 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13417:13418 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13422:13422 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13391:13394 yijing <> Yang constr
+R13397:13399 yijing <> Yin constr
+R13402:13405 yijing <> Yang constr
+R13408:13410 yijing <> Yin constr
+R13413:13416 yijing <> Yang constr
+R13419:13421 yijing <> Yin constr
+def 13438:13448 KingWen hex64_Weiji
+R13452:13459 yijing <> Hexagram def
+R13464:13464 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13468:13469 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13474:13475 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13479:13480 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13485:13486 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13490:13491 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13496:13496 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13465:13467 yijing <> Yin constr
+R13470:13473 yijing <> Yang constr
+R13476:13478 yijing <> Yin constr
+R13481:13484 yijing <> Yang constr
+R13487:13489 yijing <> Yin constr
+R13492:13495 yijing <> Yang constr
+def 13513:13529 KingWen king_wen_sequence
+R13533:13536 Coq.Init.Datatypes <> list ind
+R13538:13545 yijing <> Hexagram def
+R13554:13554 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13564:13565 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13574:13575 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13585:13586 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13596:13597 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13605:13606 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13616:13617 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13626:13627 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13635:13641 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13654:13655 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13664:13665 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13675:13676 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13685:13686 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13700:13701 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13713:13714 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13726:13727 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13736:13742 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13752:13753 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13762:13763 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13773:13774 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13785:13786 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13798:13799 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13809:13810 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13819:13820 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13829:13835 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13848:13849 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13861:13862 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13871:13872 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13884:13885 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13895:13896 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13905:13906 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13917:13918 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13929:13935 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13945:13946 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13961:13962 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13972:13973 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13986:13987 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14000:14001 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14011:14012 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14023:14024 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14034:14040 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14050:14051 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14061:14062 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14073:14074 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14084:14085 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14095:14096 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14108:14109 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14120:14121 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14132:14138 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14147:14148 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14159:14160 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14171:14172 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14182:14183 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14195:14196 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14209:14210 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14221:14222 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14232:14238 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14248:14249 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14259:14260 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14271:14272 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14282:14283 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14297:14298 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14312:14313 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14324:14325 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R14337:14337 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R13555:13563 yijing KingWen hex1_Qian def
+R13566:13573 yijing KingWen hex2_Kun def
+R13576:13584 yijing KingWen hex3_Zhun def
+R13587:13595 yijing KingWen hex4_Meng def
+R13598:13604 yijing KingWen hex5_Xu def
+R13607:13615 yijing KingWen hex6_Song def
+R13618:13625 yijing KingWen hex7_Shi def
+R13628:13634 yijing KingWen hex8_Bi def
+R13642:13653 yijing KingWen hex9_XiaoChu def
+R13656:13663 yijing KingWen hex10_Lu def
+R13666:13674 yijing KingWen hex11_Tai def
+R13677:13684 yijing KingWen hex12_Pi def
+R13687:13699 yijing KingWen hex13_TongRen def
+R13702:13712 yijing KingWen hex14_DaYou def
+R13715:13725 yijing KingWen hex15_Qian2 def
+R13728:13735 yijing KingWen hex16_Yu def
+R13743:13751 yijing KingWen hex17_Sui def
+R13754:13761 yijing KingWen hex18_Gu def
+R13764:13772 yijing KingWen hex19_Lin def
+R13775:13784 yijing KingWen hex20_Guan def
+R13787:13797 yijing KingWen hex21_ShiHe def
+R13800:13808 yijing KingWen hex22_Bi2 def
+R13811:13818 yijing KingWen hex23_Bo def
+R13821:13828 yijing KingWen hex24_Fu def
+R13836:13847 yijing KingWen hex25_WuWang def
+R13850:13860 yijing KingWen hex26_DaChu def
+R13863:13870 yijing KingWen hex27_Yi def
+R13873:13883 yijing KingWen hex28_DaGuo def
+R13886:13894 yijing KingWen hex29_Kan def
+R13897:13904 yijing KingWen hex30_Li def
+R13907:13916 yijing KingWen hex31_Xian def
+R13919:13928 yijing KingWen hex32_Heng def
+R13936:13944 yijing KingWen hex33_Dun def
+R13947:13960 yijing KingWen hex34_DaZhuang def
+R13963:13971 yijing KingWen hex35_Jin def
+R13974:13985 yijing KingWen hex36_MingYi def
+R13988:13999 yijing KingWen hex37_JiaRen def
+R14002:14010 yijing KingWen hex38_Kui def
+R14013:14022 yijing KingWen hex39_Jian def
+R14025:14033 yijing KingWen hex40_Xie def
+R14041:14049 yijing KingWen hex41_Sun def
+R14052:14060 yijing KingWen hex42_Yi2 def
+R14063:14072 yijing KingWen hex43_Guai def
+R14075:14083 yijing KingWen hex44_Gou def
+R14086:14094 yijing KingWen hex45_Cui def
+R14097:14107 yijing KingWen hex46_Sheng def
+R14110:14119 yijing KingWen hex47_Kun2 def
+R14122:14131 yijing KingWen hex48_Jing def
+R14139:14146 yijing KingWen hex49_Ge def
+R14149:14158 yijing KingWen hex50_Ding def
+R14161:14170 yijing KingWen hex51_Zhen def
+R14173:14181 yijing KingWen hex52_Gen def
+R14184:14194 yijing KingWen hex53_Jian2 def
+R14197:14208 yijing KingWen hex54_GuiMei def
+R14211:14220 yijing KingWen hex55_Feng def
+R14223:14231 yijing KingWen hex56_Lu2 def
+R14239:14247 yijing KingWen hex57_Xun def
+R14250:14258 yijing KingWen hex58_Dui def
+R14261:14270 yijing KingWen hex59_Huan def
+R14273:14281 yijing KingWen hex60_Jie def
+R14284:14296 yijing KingWen hex61_ZhongFu def
+R14299:14311 yijing KingWen hex62_XiaoGuo def
+R14314:14323 yijing KingWen hex63_Jiji def
+R14326:14336 yijing KingWen hex64_Weiji def
+prf 14351:14365 KingWen king_wen_length
+R14393:14395 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14369:14374 Coq.Init.Datatypes <> length def
+R14376:14392 yijing KingWen king_wen_sequence def
+R14432:14438 yijing KingWen <> mod
+mod 14489:14492 <> FuXi
+def 14509:14521 FuXi fuxi_sequence
+R14525:14528 Coq.Init.Datatypes <> list ind
+R14530:14537 yijing <> Hexagram def
+R14546:14553 Coq.Lists.List <> map def
+R14572:14574 Coq.Lists.List <> seq def
+R14555:14569 yijing <> nat_to_hexagram def
+prf 14594:14613 FuXi fuxi_is_binary_order
+binder 14624:14624 <> n:49
+R14633:14640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14628:14630 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R14627:14627 yijing <> n:49 var
+R14701:14703 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14641:14655 yijing <> hexagram_to_nat def
+R14658:14665 Coq.Lists.List <> nth def
+R14683:14699 yijing KingWen hex1_Qian def
+R14669:14681 yijing FuXi fuxi_sequence def
+R14667:14667 yijing <> n:49 var
+R14704:14704 yijing <> n:49 var
+R14744:14756 yijing FuXi fuxi_sequence def
+R14798:14812 yijing <> nat_to_hexagram def
+R14771:14784 Coq.Lists.List <> nth_indep thm
+R14798:14812 yijing <> nat_to_hexagram def
+R14771:14784 Coq.Lists.List <> nth_indep thm
+R14798:14812 yijing <> nat_to_hexagram def
+R14771:14784 Coq.Lists.List <> nth_indep thm
+R14798:14812 yijing <> nat_to_hexagram def
+R14771:14784 Coq.Lists.List <> nth_indep thm
+R14832:14838 Coq.Lists.List <> map_nth thm
+R14832:14838 Coq.Lists.List <> map_nth thm
+R14832:14838 Coq.Lists.List <> map_nth thm
+R14849:14855 Coq.Lists.List <> seq_nth thm
+R14849:14855 Coq.Lists.List <> seq_nth thm
+R14849:14855 Coq.Lists.List <> seq_nth thm
+R14849:14855 Coq.Lists.List <> seq_nth thm
+R14885:14906 yijing <> hexagram_nat_roundtrip thm
+R14885:14906 yijing <> hexagram_nat_roundtrip thm
+R14928:14937 Coq.Lists.List <> map_length thm
+R14940:14949 Coq.Lists.List <> seq_length thm
+R14928:14937 Coq.Lists.List <> map_length thm
+R14928:14937 Coq.Lists.List <> map_length thm
+R14940:14949 Coq.Lists.List <> seq_length thm
+R14940:14949 Coq.Lists.List <> seq_length thm
+prf 14975:14985 FuXi fuxi_length
+R15009:15011 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14989:14994 Coq.Init.Datatypes <> length def
+R14996:15008 yijing FuXi fuxi_sequence def
+R15036:15048 yijing FuXi fuxi_sequence def
+R15063:15072 Coq.Lists.List <> map_length thm
+R15063:15072 Coq.Lists.List <> map_length thm
+R15063:15072 Coq.Lists.List <> map_length thm
+R15087:15096 Coq.Lists.List <> seq_length thm
+R15087:15096 Coq.Lists.List <> seq_length thm
+R15087:15096 Coq.Lists.List <> seq_length thm
+R15128:15131 yijing FuXi <> mod
+def 15176:15194 <> hexagram_complement
+R15201:15208 yijing <> Hexagram def
+binder 15197:15197 <> h:50
+R15213:15220 yijing <> Hexagram def
+R15227:15236 Coq.Vectors.Vector <> map def
+R15292:15292 yijing <> h:50 var
+binder 15243:15243 <> l:51
+R15254:15254 yijing <> l:51 var
+R15261:15264 yijing <> Yang constr
+R15269:15271 yijing <> Yin constr
+R15275:15277 yijing <> Yin constr
+R15282:15285 yijing <> Yang constr
+def 15307:15321 <> hexagram_invert
+R15328:15335 yijing <> Hexagram def
+binder 15324:15324 <> h:53
+R15340:15347 yijing <> Hexagram def
+R15354:15354 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15419:15423 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15479:15483 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15530:15534 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15572:15576 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15605:15609 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15629:15629 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15355:15364 Coq.Vectors.Vector <> nth def
+R15369:15374 Coq.Vectors.Fin <> FS constr
+R15377:15382 Coq.Vectors.Fin <> FS constr
+R15385:15390 Coq.Vectors.Fin <> FS constr
+R15393:15398 Coq.Vectors.Fin <> FS constr
+R15401:15406 Coq.Vectors.Fin <> FS constr
+R15408:15413 Coq.Vectors.Fin <> F1 constr
+R15366:15366 yijing <> h:53 var
+R15424:15433 Coq.Vectors.Vector <> nth def
+R15438:15443 Coq.Vectors.Fin <> FS constr
+R15446:15451 Coq.Vectors.Fin <> FS constr
+R15454:15459 Coq.Vectors.Fin <> FS constr
+R15462:15467 Coq.Vectors.Fin <> FS constr
+R15469:15474 Coq.Vectors.Fin <> F1 constr
+R15435:15435 yijing <> h:53 var
+R15484:15493 Coq.Vectors.Vector <> nth def
+R15498:15503 Coq.Vectors.Fin <> FS constr
+R15506:15511 Coq.Vectors.Fin <> FS constr
+R15514:15519 Coq.Vectors.Fin <> FS constr
+R15521:15526 Coq.Vectors.Fin <> F1 constr
+R15495:15495 yijing <> h:53 var
+R15535:15544 Coq.Vectors.Vector <> nth def
+R15549:15554 Coq.Vectors.Fin <> FS constr
+R15557:15562 Coq.Vectors.Fin <> FS constr
+R15564:15569 Coq.Vectors.Fin <> F1 constr
+R15546:15546 yijing <> h:53 var
+R15577:15586 Coq.Vectors.Vector <> nth def
+R15591:15596 Coq.Vectors.Fin <> FS constr
+R15598:15603 Coq.Vectors.Fin <> F1 constr
+R15588:15588 yijing <> h:53 var
+R15610:15619 Coq.Vectors.Vector <> nth def
+R15623:15628 Coq.Vectors.Fin <> F1 constr
+R15621:15621 yijing <> h:53 var
+def 15644:15659 <> hexagram_nuclear
+R15666:15673 yijing <> Hexagram def
+binder 15662:15662 <> h:54
+R15678:15685 yijing <> Hexagram def
+R15692:15692 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15721:15725 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15763:15767 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15814:15818 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15856:15860 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15907:15911 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15967:15967 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R15693:15702 Coq.Vectors.Vector <> nth def
+R15707:15712 Coq.Vectors.Fin <> FS constr
+R15714:15719 Coq.Vectors.Fin <> F1 constr
+R15704:15704 yijing <> h:54 var
+R15726:15735 Coq.Vectors.Vector <> nth def
+R15740:15745 Coq.Vectors.Fin <> FS constr
+R15748:15753 Coq.Vectors.Fin <> FS constr
+R15755:15760 Coq.Vectors.Fin <> F1 constr
+R15737:15737 yijing <> h:54 var
+R15768:15777 Coq.Vectors.Vector <> nth def
+R15782:15787 Coq.Vectors.Fin <> FS constr
+R15790:15795 Coq.Vectors.Fin <> FS constr
+R15798:15803 Coq.Vectors.Fin <> FS constr
+R15805:15810 Coq.Vectors.Fin <> F1 constr
+R15779:15779 yijing <> h:54 var
+R15819:15828 Coq.Vectors.Vector <> nth def
+R15833:15838 Coq.Vectors.Fin <> FS constr
+R15841:15846 Coq.Vectors.Fin <> FS constr
+R15848:15853 Coq.Vectors.Fin <> F1 constr
+R15830:15830 yijing <> h:54 var
+R15861:15870 Coq.Vectors.Vector <> nth def
+R15875:15880 Coq.Vectors.Fin <> FS constr
+R15883:15888 Coq.Vectors.Fin <> FS constr
+R15891:15896 Coq.Vectors.Fin <> FS constr
+R15898:15903 Coq.Vectors.Fin <> F1 constr
+R15872:15872 yijing <> h:54 var
+R15912:15921 Coq.Vectors.Vector <> nth def
+R15926:15931 Coq.Vectors.Fin <> FS constr
+R15934:15939 Coq.Vectors.Fin <> FS constr
+R15942:15947 Coq.Vectors.Fin <> FS constr
+R15950:15955 Coq.Vectors.Fin <> FS constr
+R15957:15962 Coq.Vectors.Fin <> F1 constr
+R15923:15923 yijing <> h:54 var
+prf 15979:16008 <> hexagram_complement_involution
+binder 16019:16019 <> h:55
+R16067:16069 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16024:16042 yijing <> hexagram_complement def
+R16045:16063 yijing <> hexagram_complement def
+R16065:16065 yijing <> h:55 var
+R16070:16070 yijing <> h:55 var
+R16101:16108 yijing <> Hexagram def
+R16125:16137 Coq.Vectors.Vector <> caseS' def
+R16125:16137 Coq.Vectors.Vector <> caseS' def
+R16166:16178 Coq.Vectors.Vector <> caseS' def
+R16166:16178 Coq.Vectors.Vector <> caseS' def
+R16208:16220 Coq.Vectors.Vector <> caseS' def
+R16208:16220 Coq.Vectors.Vector <> caseS' def
+R16250:16262 Coq.Vectors.Vector <> caseS' def
+R16250:16262 Coq.Vectors.Vector <> caseS' def
+R16292:16304 Coq.Vectors.Vector <> caseS' def
+R16292:16304 Coq.Vectors.Vector <> caseS' def
+R16334:16346 Coq.Vectors.Vector <> caseS' def
+R16334:16346 Coq.Vectors.Vector <> caseS' def
+R16387:16398 Coq.Vectors.Vector <> case0 def
+R16387:16398 Coq.Vectors.Vector <> case0 def
+prf 16463:16479 <> invert_involution
+binder 16490:16490 <> h:56
+R16530:16532 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16495:16509 yijing <> hexagram_invert def
+R16512:16526 yijing <> hexagram_invert def
+R16528:16528 yijing <> h:56 var
+R16533:16533 yijing <> h:56 var
+R16564:16571 yijing <> Hexagram def
+R16588:16600 Coq.Vectors.Vector <> caseS' def
+R16588:16600 Coq.Vectors.Vector <> caseS' def
+R16629:16641 Coq.Vectors.Vector <> caseS' def
+R16629:16641 Coq.Vectors.Vector <> caseS' def
+R16671:16683 Coq.Vectors.Vector <> caseS' def
+R16671:16683 Coq.Vectors.Vector <> caseS' def
+R16713:16725 Coq.Vectors.Vector <> caseS' def
+R16713:16725 Coq.Vectors.Vector <> caseS' def
+R16755:16767 Coq.Vectors.Vector <> caseS' def
+R16755:16767 Coq.Vectors.Vector <> caseS' def
+R16797:16809 Coq.Vectors.Vector <> caseS' def
+R16797:16809 Coq.Vectors.Vector <> caseS' def
+R16850:16861 Coq.Vectors.Vector <> case0 def
+R16850:16861 Coq.Vectors.Vector <> case0 def
+prf 16893:16916 <> qian_kun_are_complements
+R16959:16961 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R16922:16940 yijing <> hexagram_complement def
+R16942:16958 yijing <> hex1_Qian def
+R16962:16977 yijing <> hex2_Kun def
+R17023:17031 Coq.Logic.Eqdep_dec <> <> lib
+prf 17041:17047 <> UIP_nat
+R17063:17065 Coq.Init.Datatypes <> nat ind
+binder 17059:17059 <> n:57
+R17076:17078 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17075:17075 yijing <> n:57 var
+R17079:17079 yijing <> n:57 var
+binder 17069:17069 <> p:58
+binder 17071:17071 <> q:59
+R17084:17086 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17083:17083 yijing <> p:58 var
+R17087:17087 yijing <> q:59 var
+R17111:17117 Coq.Logic.Eqdep_dec <> UIP_dec thm
+R17111:17117 Coq.Logic.Eqdep_dec <> UIP_dec thm
+mod 17180:17190 <> YarrowStalk
+def 17506:17527 YarrowStalk yarrow_value_to_moving
+R17534:17536 Coq.Init.Datatypes <> nat ind
+binder 17530:17530 <> v:60
+R17541:17546 Coq.Init.Datatypes <> option ind
+R17548:17557 yijing <> MovingLine ind
+R17572:17572 yijing <> v:60 var
+R17590:17593 Coq.Init.Datatypes <> Some constr
+R17595:17600 yijing <> OldYin constr
+R17613:17616 Coq.Init.Datatypes <> Some constr
+R17618:17626 yijing <> YoungYang constr
+R17639:17642 Coq.Init.Datatypes <> Some constr
+R17644:17651 yijing <> YoungYin constr
+R17664:17667 Coq.Init.Datatypes <> Some constr
+R17669:17675 yijing <> OldYang constr
+R17688:17691 Coq.Init.Datatypes <> None constr
+def 17716:17733 YarrowStalk yarrow_value_valid
+R17740:17742 Coq.Init.Datatypes <> nat ind
+binder 17736:17736 <> v:62
+R17747:17750 Coq.Init.Datatypes <> bool ind
+R17765:17765 yijing <> v:62 var
+R17795:17798 Coq.Init.Datatypes <> true constr
+R17795:17798 Coq.Init.Datatypes <> true constr
+R17795:17798 Coq.Init.Datatypes <> true constr
+R17795:17798 Coq.Init.Datatypes <> true constr
+R17811:17815 Coq.Init.Datatypes <> false constr
+prf 17835:17850 YarrowStalk yarrow_valid_iff
+binder 17861:17861 <> v:64
+R17895:17900 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R17933:17933 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R17888:17890 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17868:17885 yijing YarrowStalk yarrow_value_valid def
+R17887:17887 yijing <> v:64 var
+R17891:17894 Coq.Init.Datatypes <> true constr
+R17906:17909 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R17902:17904 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17901:17901 yijing <> v:64 var
+R17915:17918 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R17911:17913 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17910:17910 yijing <> v:64 var
+R17924:17927 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R17920:17922 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17919:17919 yijing <> v:64 var
+R17929:17931 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17928:17928 yijing <> v:64 var
+prf 18113:18135 YarrowStalk yarrow_valid_gives_some
+binder 18146:18146 <> v:65
+R18180:18183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18173:18175 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18153:18170 yijing YarrowStalk yarrow_value_valid def
+R18172:18172 yijing <> v:65 var
+R18176:18179 Coq.Init.Datatypes <> true constr
+R18184:18190 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18192:18193 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 18191:18191 <> m:66
+R18218:18220 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R18194:18215 yijing YarrowStalk yarrow_value_to_moving def
+R18217:18217 yijing <> v:65 var
+R18221:18224 Coq.Init.Datatypes <> Some constr
+R18226:18226 yijing <> m:66 var
+def 18420:18431 YarrowStalk prob_old_yin
+R18435:18435 Coq.QArith.QArith_base <> Q rec
+R18441:18443 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 18461:18475 YarrowStalk prob_young_yang
+R18479:18479 Coq.QArith.QArith_base <> Q rec
+R18485:18487 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 18505:18518 YarrowStalk prob_young_yin
+R18522:18522 Coq.QArith.QArith_base <> Q rec
+R18528:18530 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 18548:18560 YarrowStalk prob_old_yang
+R18564:18564 Coq.QArith.QArith_base <> Q rec
+R18570:18572 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+prf 18588:18610 YarrowStalk yarrow_probs_sum_to_one
+R18682:18685 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R18666:18668 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R18649:18651 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R18631:18633 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R18619:18630 yijing YarrowStalk prob_old_yin def
+R18634:18648 yijing YarrowStalk prob_young_yang def
+R18652:18665 yijing YarrowStalk prob_young_yin def
+R18669:18681 yijing YarrowStalk prob_old_yang def
+R18712:18723 yijing YarrowStalk prob_old_yin def
+R18726:18740 yijing YarrowStalk prob_young_yang def
+R18743:18756 yijing YarrowStalk prob_young_yin def
+R18759:18771 yijing YarrowStalk prob_old_yang def
+def 18860:18872 YarrowStalk prob_changing
+R18876:18876 Coq.QArith.QArith_base <> Q rec
+R18894:18896 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R18882:18893 yijing YarrowStalk prob_old_yin def
+R18897:18909 yijing YarrowStalk prob_old_yang def
+prf 18926:18949 YarrowStalk prob_changing_is_quarter
+R18971:18974 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R18958:18970 yijing YarrowStalk prob_changing def
+R18976:18978 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R19005:19017 yijing YarrowStalk prob_changing def
+R19020:19031 yijing YarrowStalk prob_old_yin def
+R19034:19046 yijing YarrowStalk prob_old_yang def
+def 19152:19160 YarrowStalk prob_yang
+R19164:19164 Coq.QArith.QArith_base <> Q rec
+R19185:19187 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R19170:19184 yijing YarrowStalk prob_young_yang def
+R19188:19200 yijing YarrowStalk prob_old_yang def
+prf 19217:19233 YarrowStalk prob_yang_is_half
+R19251:19254 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R19242:19250 yijing YarrowStalk prob_yang def
+R19256:19258 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R19285:19293 yijing YarrowStalk prob_yang def
+R19296:19310 yijing YarrowStalk prob_young_yang def
+R19313:19325 yijing YarrowStalk prob_old_yang def
+def 19430:19437 YarrowStalk prob_yin
+R19441:19441 Coq.QArith.QArith_base <> Q rec
+R19461:19463 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R19447:19460 yijing YarrowStalk prob_young_yin def
+R19464:19475 yijing YarrowStalk prob_old_yin def
+prf 19492:19507 YarrowStalk prob_yin_is_half
+R19524:19527 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R19516:19523 yijing YarrowStalk prob_yin def
+R19529:19531 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R19558:19565 yijing YarrowStalk prob_yin def
+R19568:19581 yijing YarrowStalk prob_young_yin def
+R19584:19595 yijing YarrowStalk prob_old_yin def
+R19627:19637 yijing YarrowStalk <> mod
+mod 19670:19679 <> CoinOracle
+def 19924:19940 CoinOracle coin_prob_old_yin
+R19944:19944 Coq.QArith.QArith_base <> Q rec
+R19950:19952 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 19969:19988 CoinOracle coin_prob_young_yang
+R19992:19992 Coq.QArith.QArith_base <> Q rec
+R19998:20000 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 20017:20035 CoinOracle coin_prob_young_yin
+R20039:20039 Coq.QArith.QArith_base <> Q rec
+R20045:20047 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+def 20064:20081 CoinOracle coin_prob_old_yang
+R20085:20085 Coq.QArith.QArith_base <> Q rec
+R20091:20093 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+prf 20108:20128 CoinOracle coin_probs_sum_to_one
+R20220:20223 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R20199:20201 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R20177:20179 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R20154:20156 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R20137:20153 yijing CoinOracle coin_prob_old_yin def
+R20157:20176 yijing CoinOracle coin_prob_young_yang def
+R20180:20198 yijing CoinOracle coin_prob_young_yin def
+R20202:20219 yijing CoinOracle coin_prob_old_yang def
+R20250:20266 yijing CoinOracle coin_prob_old_yin def
+R20269:20288 yijing CoinOracle coin_prob_young_yang def
+R20291:20309 yijing CoinOracle coin_prob_young_yin def
+R20312:20329 yijing CoinOracle coin_prob_old_yang def
+def 20370:20387 CoinOracle coin_prob_changing
+R20391:20391 Coq.QArith.QArith_base <> Q rec
+R20414:20416 Coq.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R20397:20413 yijing CoinOracle coin_prob_old_yin def
+R20417:20434 yijing CoinOracle coin_prob_old_yang def
+prf 20451:20479 CoinOracle coin_prob_changing_is_quarter
+R20506:20509 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R20488:20505 yijing CoinOracle coin_prob_changing def
+R20511:20513 Coq.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R20540:20557 yijing CoinOracle coin_prob_changing def
+R20560:20576 yijing CoinOracle coin_prob_old_yin def
+R20579:20596 yijing CoinOracle coin_prob_old_yang def
+prf 20696:20718 CoinOracle coin_yin_yang_symmetric
+R20769:20776 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R20744:20747 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R20727:20743 yijing CoinOracle coin_prob_old_yin def
+R20748:20765 yijing CoinOracle coin_prob_old_yang def
+R20797:20800 Coq.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R20778:20796 yijing CoinOracle coin_prob_young_yin def
+R20801:20820 yijing CoinOracle coin_prob_young_yang def
+prf 20932:20948 CoinOracle yarrow_favors_yin
+R20983:20985 Coq.QArith.QArith_base <> ::Q_scope:x_'>'_x not
+R20986:21012 yijing YarrowStalk prob_young_yang def
+R20957:20982 yijing YarrowStalk prob_young_yin def
+R21038:21063 yijing YarrowStalk prob_young_yin def
+R21066:21092 yijing YarrowStalk prob_young_yang def
+R21124:21133 yijing CoinOracle <> mod
+def 21188:21201 <> MovingHexagram
+R21206:21213 Coq.Vectors.Vector <> t ind
+R21215:21224 yijing <> MovingLine ind
+def 21241:21256 <> primary_hexagram
+R21263:21276 yijing <> MovingHexagram def
+binder 21259:21259 <> m:67
+R21281:21288 yijing <> Hexagram def
+R21295:21304 Coq.Vectors.Vector <> map def
+R21321:21321 yijing <> m:67 var
+R21306:21319 yijing <> line_of_moving def
+def 21336:21352 <> relating_hexagram
+R21359:21372 yijing <> MovingHexagram def
+binder 21355:21355 <> m:68
+R21377:21384 yijing <> Hexagram def
+R21391:21400 Coq.Vectors.Vector <> map def
+R21417:21417 yijing <> m:68 var
+R21402:21415 yijing <> transform_line def
+def 21432:21449 <> has_changing_lines
+R21456:21469 yijing <> MovingHexagram def
+binder 21452:21452 <> m:69
+R21474:21477 Coq.Init.Datatypes <> bool ind
+R21484:21499 Coq.Vectors.Vector <> fold_left def
+R21512:21521 Coq.Vectors.Vector <> map def
+R21535:21535 yijing <> m:69 var
+R21523:21533 yijing <> is_changing def
+R21505:21509 Coq.Init.Datatypes <> false constr
+R21501:21503 Coq.Init.Datatypes <> orb def
+prf 21546:21561 <> stable_line_same
+binder 21572:21572 <> m:70
+R21598:21601 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21590:21592 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21577:21587 yijing <> is_changing def
+R21589:21589 yijing <> m:70 var
+R21593:21597 Coq.Init.Datatypes <> false constr
+R21618:21620 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21602:21615 yijing <> line_of_moving def
+R21617:21617 yijing <> m:70 var
+R21621:21634 yijing <> transform_line def
+R21636:21636 yijing <> m:70 var
+prf 21718:21741 <> no_changes_same_hexagram
+binder 21752:21753 <> l0:71
+binder 21755:21756 <> l1:72
+binder 21758:21759 <> l2:73
+binder 21761:21762 <> l3:74
+binder 21764:21765 <> l4:75
+binder 21767:21768 <> l5:76
+R21824:21829 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21816:21818 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21773:21790 yijing <> has_changing_lines def
+R21792:21792 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21795:21796 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21799:21800 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21803:21804 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21807:21808 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21811:21812 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21815:21815 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21793:21794 yijing <> l0:71 var
+R21797:21798 yijing <> l1:72 var
+R21801:21802 yijing <> l2:73 var
+R21805:21806 yijing <> l3:74 var
+R21809:21810 yijing <> l4:75 var
+R21813:21814 yijing <> l5:76 var
+R21819:21823 Coq.Init.Datatypes <> false constr
+R21871:21873 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21830:21845 yijing <> primary_hexagram def
+R21847:21847 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21850:21851 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21854:21855 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21858:21859 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21862:21863 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21866:21867 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21870:21870 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21848:21849 yijing <> l0:71 var
+R21852:21853 yijing <> l1:72 var
+R21856:21857 yijing <> l2:73 var
+R21860:21861 yijing <> l3:74 var
+R21864:21865 yijing <> l4:75 var
+R21868:21869 yijing <> l5:76 var
+R21874:21890 yijing <> relating_hexagram def
+R21892:21892 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21895:21896 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21899:21900 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21903:21904 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21907:21908 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21911:21912 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21915:21915 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R21893:21894 yijing <> l0:71 var
+R21897:21898 yijing <> l1:72 var
+R21901:21902 yijing <> l2:73 var
+R21905:21906 yijing <> l3:74 var
+R21909:21910 yijing <> l4:75 var
+R21913:21914 yijing <> l5:76 var
+R21964:21981 yijing <> has_changing_lines def
+R21984:21999 yijing <> primary_hexagram def
+R22002:22018 yijing <> relating_hexagram def
+def 22331:22338 <> line_eqb
+R22349:22352 yijing <> Line ind
+binder 22341:22342 <> l1:77
+binder 22344:22345 <> l2:78
+R22357:22360 Coq.Init.Datatypes <> bool ind
+R22377:22378 yijing <> l2:78 var
+R22373:22374 yijing <> l1:77 var
+R22389:22392 yijing <> Yang constr
+R22395:22398 yijing <> Yang constr
+R22403:22406 Coq.Init.Datatypes <> true constr
+R22412:22414 yijing <> Yin constr
+R22417:22419 yijing <> Yin constr
+R22424:22427 Coq.Init.Datatypes <> true constr
+R22441:22445 Coq.Init.Datatypes <> false constr
+def 22466:22477 <> hexagram_eqb
+R22488:22495 yijing <> Hexagram def
+binder 22480:22481 <> h1:81
+binder 22483:22484 <> h2:82
+R22500:22503 Coq.Init.Datatypes <> bool ind
+R22988:22993 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R22856:22861 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R22742:22747 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R22646:22651 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R22568:22573 Coq.Init.Datatypes <> ::bool_scope:x_'&&'_x not
+R22510:22517 yijing <> line_eqb def
+R22520:22529 Coq.Vectors.Vector <> nth def
+R22535:22540 Coq.Vectors.Fin <> F1 constr
+R22531:22532 yijing <> h1:81 var
+R22545:22554 Coq.Vectors.Vector <> nth def
+R22560:22565 Coq.Vectors.Fin <> F1 constr
+R22556:22557 yijing <> h2:82 var
+R22574:22581 yijing <> line_eqb def
+R22584:22593 Coq.Vectors.Vector <> nth def
+R22599:22604 Coq.Vectors.Fin <> FS constr
+R22606:22611 Coq.Vectors.Fin <> F1 constr
+R22595:22596 yijing <> h1:81 var
+R22616:22625 Coq.Vectors.Vector <> nth def
+R22631:22636 Coq.Vectors.Fin <> FS constr
+R22638:22643 Coq.Vectors.Fin <> F1 constr
+R22627:22628 yijing <> h2:82 var
+R22652:22659 yijing <> line_eqb def
+R22662:22671 Coq.Vectors.Vector <> nth def
+R22677:22682 Coq.Vectors.Fin <> FS constr
+R22685:22690 Coq.Vectors.Fin <> FS constr
+R22692:22697 Coq.Vectors.Fin <> F1 constr
+R22673:22674 yijing <> h1:81 var
+R22703:22712 Coq.Vectors.Vector <> nth def
+R22718:22723 Coq.Vectors.Fin <> FS constr
+R22726:22731 Coq.Vectors.Fin <> FS constr
+R22733:22738 Coq.Vectors.Fin <> F1 constr
+R22714:22715 yijing <> h2:82 var
+R22748:22755 yijing <> line_eqb def
+R22758:22767 Coq.Vectors.Vector <> nth def
+R22773:22778 Coq.Vectors.Fin <> FS constr
+R22781:22786 Coq.Vectors.Fin <> FS constr
+R22789:22794 Coq.Vectors.Fin <> FS constr
+R22796:22801 Coq.Vectors.Fin <> F1 constr
+R22769:22770 yijing <> h1:81 var
+R22808:22817 Coq.Vectors.Vector <> nth def
+R22823:22828 Coq.Vectors.Fin <> FS constr
+R22831:22836 Coq.Vectors.Fin <> FS constr
+R22839:22844 Coq.Vectors.Fin <> FS constr
+R22846:22851 Coq.Vectors.Fin <> F1 constr
+R22819:22820 yijing <> h2:82 var
+R22862:22869 yijing <> line_eqb def
+R22872:22881 Coq.Vectors.Vector <> nth def
+R22887:22892 Coq.Vectors.Fin <> FS constr
+R22895:22900 Coq.Vectors.Fin <> FS constr
+R22903:22908 Coq.Vectors.Fin <> FS constr
+R22911:22916 Coq.Vectors.Fin <> FS constr
+R22918:22923 Coq.Vectors.Fin <> F1 constr
+R22883:22884 yijing <> h1:81 var
+R22931:22940 Coq.Vectors.Vector <> nth def
+R22946:22951 Coq.Vectors.Fin <> FS constr
+R22954:22959 Coq.Vectors.Fin <> FS constr
+R22962:22967 Coq.Vectors.Fin <> FS constr
+R22970:22975 Coq.Vectors.Fin <> FS constr
+R22977:22982 Coq.Vectors.Fin <> F1 constr
+R22942:22943 yijing <> h2:82 var
+R22994:23001 yijing <> line_eqb def
+R23004:23013 Coq.Vectors.Vector <> nth def
+R23019:23024 Coq.Vectors.Fin <> FS constr
+R23027:23032 Coq.Vectors.Fin <> FS constr
+R23035:23040 Coq.Vectors.Fin <> FS constr
+R23043:23048 Coq.Vectors.Fin <> FS constr
+R23051:23056 Coq.Vectors.Fin <> FS constr
+R23058:23063 Coq.Vectors.Fin <> F1 constr
+R23015:23016 yijing <> h1:81 var
+R23072:23081 Coq.Vectors.Vector <> nth def
+R23087:23092 Coq.Vectors.Fin <> FS constr
+R23095:23100 Coq.Vectors.Fin <> FS constr
+R23103:23108 Coq.Vectors.Fin <> FS constr
+R23111:23116 Coq.Vectors.Fin <> FS constr
+R23119:23124 Coq.Vectors.Fin <> FS constr
+R23126:23131 Coq.Vectors.Fin <> F1 constr
+R23083:23084 yijing <> h2:82 var
+def 23152:23166 <> is_self_inverse
+R23173:23180 yijing <> Hexagram def
+binder 23169:23169 <> h:83
+R23185:23188 Coq.Init.Datatypes <> bool ind
+R23195:23206 yijing <> hexagram_eqb def
+R23208:23208 yijing <> h:83 var
+R23211:23225 yijing <> hexagram_invert def
+R23227:23227 yijing <> h:83 var
+prf 23240:23256 <> qian_self_inverse
+R23293:23295 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23260:23274 yijing <> is_self_inverse def
+R23276:23292 yijing <> hex1_Qian def
+R23296:23299 Coq.Init.Datatypes <> true constr
+prf 23352:23367 <> kun_self_inverse
+R23403:23405 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23371:23385 yijing <> is_self_inverse def
+R23387:23402 yijing <> hex2_Kun def
+R23406:23409 Coq.Init.Datatypes <> true constr
+prf 23528:23547 <> pair_1_2_complements
+R23590:23592 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23553:23571 yijing <> hexagram_complement def
+R23573:23589 yijing <> hex1_Qian def
+R23593:23608 yijing <> hex2_Kun def
+prf 23691:23712 <> pair_11_12_complements
+R23755:23757 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23718:23736 yijing <> hexagram_complement def
+R23738:23754 yijing <> hex11_Tai def
+R23758:23773 yijing <> hex12_Pi def
+prf 23860:23881 <> pair_63_64_complements
+R23925:23927 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23887:23905 yijing <> hexagram_complement def
+R23907:23924 yijing <> hex63_Jiji def
+R23928:23946 yijing <> hex64_Weiji def
+def 24151:24163 <> lower_nuclear
+R24170:24177 yijing <> Hexagram def
+binder 24166:24166 <> h:84
+R24182:24188 yijing <> Trigram def
+R24195:24195 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24224:24228 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24266:24270 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24317:24317 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24196:24205 Coq.Vectors.Vector <> nth def
+R24210:24215 Coq.Vectors.Fin <> FS constr
+R24217:24222 Coq.Vectors.Fin <> F1 constr
+R24207:24207 yijing <> h:84 var
+R24229:24238 Coq.Vectors.Vector <> nth def
+R24243:24248 Coq.Vectors.Fin <> FS constr
+R24251:24256 Coq.Vectors.Fin <> FS constr
+R24258:24263 Coq.Vectors.Fin <> F1 constr
+R24240:24240 yijing <> h:84 var
+R24271:24280 Coq.Vectors.Vector <> nth def
+R24285:24290 Coq.Vectors.Fin <> FS constr
+R24293:24298 Coq.Vectors.Fin <> FS constr
+R24301:24306 Coq.Vectors.Fin <> FS constr
+R24308:24313 Coq.Vectors.Fin <> F1 constr
+R24282:24282 yijing <> h:84 var
+def 24332:24344 <> upper_nuclear
+R24351:24358 yijing <> Hexagram def
+binder 24347:24347 <> h:85
+R24363:24369 yijing <> Trigram def
+R24376:24376 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24414:24418 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24465:24469 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24525:24525 Coq.Vectors.VectorDef VectorNotations ::vector_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R24377:24386 Coq.Vectors.Vector <> nth def
+R24391:24396 Coq.Vectors.Fin <> FS constr
+R24399:24404 Coq.Vectors.Fin <> FS constr
+R24406:24411 Coq.Vectors.Fin <> F1 constr
+R24388:24388 yijing <> h:85 var
+R24419:24428 Coq.Vectors.Vector <> nth def
+R24433:24438 Coq.Vectors.Fin <> FS constr
+R24441:24446 Coq.Vectors.Fin <> FS constr
+R24449:24454 Coq.Vectors.Fin <> FS constr
+R24456:24461 Coq.Vectors.Fin <> F1 constr
+R24430:24430 yijing <> h:85 var
+R24470:24479 Coq.Vectors.Vector <> nth def
+R24484:24489 Coq.Vectors.Fin <> FS constr
+R24492:24497 Coq.Vectors.Fin <> FS constr
+R24500:24505 Coq.Vectors.Fin <> FS constr
+R24508:24513 Coq.Vectors.Fin <> FS constr
+R24515:24520 Coq.Vectors.Fin <> F1 constr
+R24481:24481 yijing <> h:85 var
+prf 24588:24611 <> nuclear_trigrams_overlap
+binder 24622:24622 <> h:86
+R24709:24714 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R24671:24673 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24627:24636 Coq.Vectors.Vector <> nth def
+R24657:24662 Coq.Vectors.Fin <> FS constr
+R24664:24669 Coq.Vectors.Fin <> F1 constr
+R24639:24651 yijing <> lower_nuclear def
+R24653:24653 yijing <> h:86 var
+R24674:24683 Coq.Vectors.Vector <> nth def
+R24703:24708 Coq.Vectors.Fin <> F1 constr
+R24686:24698 yijing <> upper_nuclear def
+R24700:24700 yijing <> h:86 var
+R24768:24770 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24715:24724 Coq.Vectors.Vector <> nth def
+R24745:24750 Coq.Vectors.Fin <> FS constr
+R24753:24758 Coq.Vectors.Fin <> FS constr
+R24760:24765 Coq.Vectors.Fin <> F1 constr
+R24727:24739 yijing <> lower_nuclear def
+R24741:24741 yijing <> h:86 var
+R24771:24780 Coq.Vectors.Vector <> nth def
+R24801:24806 Coq.Vectors.Fin <> FS constr
+R24808:24813 Coq.Vectors.Fin <> F1 constr
+R24783:24795 yijing <> upper_nuclear def
+R24797:24797 yijing <> h:86 var
+prf 24909:24928 <> qian_nuclear_is_qian
+R24968:24970 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24934:24949 yijing <> hexagram_nuclear def
+R24951:24967 yijing <> hex1_Qian def
+R24971:24987 yijing <> hex1_Qian def
+prf 25061:25078 <> kun_nuclear_is_kun
+R25117:25119 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25084:25099 yijing <> hexagram_nuclear def
+R25101:25116 yijing <> hex2_Kun def
+R25120:25135 yijing <> hex2_Kun def
