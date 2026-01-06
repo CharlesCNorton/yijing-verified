@@ -18,6 +18,55 @@
 (*                                                                            *)
 (******************************************************************************)
 
+(** * TODO
+
+    1.  Transformation graph: formalize the 64 hexagrams as a graph where edges
+        are single-line changes. Prove connectivity, diameter, path properties.
+
+    2.  Complete moving line enumeration: enumerate all 4^6 = 4,096 moving
+        hexagram configurations. Prove properties about the full transformation
+        space.
+
+    3.  King Wen sequence analysis: prove the pairing structure (inversions and
+        complements) for all 32 pairs, not just the three examples.
+
+    4.  Trigram algebra: formalize the 8 trigrams as a group under XOR/complement.
+        Prove isomorphism to Z_2^3.
+
+    5.  Nuclear hexagram chain: characterize fixed points and eventual cycles
+        of the nuclear hexagram function on all 64 hexagrams.
+
+    6.  Shao Yong circular arrangement: formalize the Fu Xi sequence geometric
+        interpretation (hexagrams in a circle, binary complements opposite).
+
+    7.  Line position semantics: define odd positions as yang places, even as
+        yin places. Formalize "proper position" (yang line in yang place).
+
+    8.  Constituting rulers: formalize the "ruling line" of each hexagram
+        determined by structural properties.
+
+    9.  Correspondence/resonance: define the corresponding pairs (1-4, 2-5, 3-6)
+        and their properties.
+
+    10. Time/season mapping: formalize the hexagram-to-month and seasonal cycle
+        correspondences.
+
+    11. Textual layer: represent the judgments (guaci) and line statements
+        (yaoci) as structured data.
+
+    12. Probability model depth: derive distribution over full readings, expected
+        number of changing lines, variance calculations.
+
+    13. Mutual hexagram relation: define and compute the "mutual" hexagram for
+        each hexagram.
+
+    14. King Wen sequence uniqueness: prove NoDup (all 64 hexagrams appear
+        exactly once).
+
+    15. Fu Xi sequence bijection: complete the bijection theorem (both
+        directions, not just fuxi_is_binary_order).
+*)
+
 (** * Citations and Primary Sources
 
     ** Classical Sources
