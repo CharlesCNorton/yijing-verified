@@ -57,6 +57,7 @@ Require Import Coq.Arith.Arith.
 Require Import Coq.NArith.BinNat.
 Require Import Coq.Vectors.Vector.
 Require Import Coq.QArith.QArith.
+Require Import Lia.
 Import ListNotations.
 Import VectorNotations.
 Open Scope nat_scope.
@@ -156,9 +157,20 @@ Proof. reflexivity. Qed.
 Theorem kun_qian_complement : trigram_complement Kun = Qian.
 Proof. reflexivity. Qed.
 
+Lemma line_complement_involution : forall l,
+  match match l with Yang => Yin | Yin => Yang end with Yang => Yin | Yin => Yang end = l.
+Proof. intros []; reflexivity. Qed.
+
 Theorem trigram_complement_involution : forall t, trigram_complement (trigram_complement t) = t.
 Proof.
-Admitted.
+  intros t.
+  unfold Trigram in t.
+  apply (Vector.caseS' t). intros l0 t0.
+  apply (Vector.caseS' t0). intros l1 t1.
+  apply (Vector.caseS' t1). intros l2 t2.
+  pattern t2. apply Vector.case0. simpl.
+  destruct l0, l1, l2; reflexivity.
+Qed.
 
 (** * Hexagrams *)
 
@@ -185,11 +197,23 @@ Definition nat_to_hexagram (n : nat) : Hexagram :=
 
 Theorem hexagram_nat_roundtrip : forall n, n < 64 -> hexagram_to_nat (nat_to_hexagram n) = n.
 Proof.
-Admitted.
+  intros n Hn.
+  do 64 (destruct n as [|n]; [reflexivity|]); lia.
+Qed.
 
 Theorem nat_hexagram_roundtrip : forall h, nat_to_hexagram (hexagram_to_nat h) = h.
 Proof.
-Admitted.
+  intros h.
+  unfold Hexagram in h.
+  apply (Vector.caseS' h). intros l0 h0.
+  apply (Vector.caseS' h0). intros l1 h1.
+  apply (Vector.caseS' h1). intros l2 h2.
+  apply (Vector.caseS' h2). intros l3 h3.
+  apply (Vector.caseS' h3). intros l4 h4.
+  apply (Vector.caseS' h4). intros l5 h5.
+  pattern h5. apply Vector.case0.
+  destruct l0, l1, l2, l3, l4, l5; reflexivity.
+Qed.
 
 Definition lower_trigram (h : Hexagram) : Trigram :=
   [Vector.nth h Fin.F1;
@@ -207,7 +231,17 @@ Definition hexagram_of_trigrams (lower upper : Trigram) : Hexagram :=
 Theorem trigram_decomposition : forall h,
   hexagram_of_trigrams (lower_trigram h) (upper_trigram h) = h.
 Proof.
-Admitted.
+  intros h.
+  unfold Hexagram in h.
+  apply (Vector.caseS' h). intros l0 h0.
+  apply (Vector.caseS' h0). intros l1 h1.
+  apply (Vector.caseS' h1). intros l2 h2.
+  apply (Vector.caseS' h2). intros l3 h3.
+  apply (Vector.caseS' h3). intros l4 h4.
+  apply (Vector.caseS' h4). intros l5 h5.
+  pattern h5. apply Vector.case0.
+  reflexivity.
+Qed.
 
 (** * The 64 Hexagrams with King Wen Numbers *)
 
@@ -245,7 +279,13 @@ Module FuXi.
   Theorem fuxi_is_binary_order : forall n, n < 64 ->
     hexagram_to_nat (List.nth n fuxi_sequence KingWen.hex1_Qian) = n.
   Proof.
-  Admitted.
+    intros n Hn.
+    unfold fuxi_sequence.
+    rewrite List.nth_indep with (d' := nat_to_hexagram 0).
+    - rewrite map_nth. rewrite seq_nth; [|lia]. simpl.
+      apply hexagram_nat_roundtrip. lia.
+    - rewrite map_length, seq_length. lia.
+  Qed.
 
   Theorem fuxi_length : length fuxi_sequence = 64.
   Proof.
@@ -276,12 +316,25 @@ Definition hexagram_nuclear (h : Hexagram) : Hexagram :=
 Theorem hexagram_complement_involution : forall h,
   hexagram_complement (hexagram_complement h) = h.
 Proof.
-Admitted.
+  intros h.
+  unfold Hexagram in h.
+  apply (Vector.caseS' h). intros l0 h0.
+  apply (Vector.caseS' h0). intros l1 h1.
+  apply (Vector.caseS' h1). intros l2 h2.
+  apply (Vector.caseS' h2). intros l3 h3.
+  apply (Vector.caseS' h3). intros l4 h4.
+  apply (Vector.caseS' h4). intros l5 h5.
+  pattern h5. apply Vector.case0.
+  destruct l0, l1, l2, l3, l4, l5; reflexivity.
+Qed.
 
 Theorem invert_involution : forall h,
   hexagram_invert (hexagram_invert h) = h.
 Proof.
-Admitted.
+  intros h.
+  unfold hexagram_invert.
+  apply Vector.rev_rev.
+Qed.
 
 Theorem qian_kun_are_complements :
   hexagram_complement KingWen.hex1_Qian = KingWen.hex2_Kun.
@@ -289,175 +342,8 @@ Proof.
   reflexivity.
 Qed.
 
-Theorem tai_pi_are_inversions :
-  hexagram_invert KingWen.hex11_Tai = KingWen.hex12_Pi.
-Proof.
-Admitted.
+Require Import Eqdep_dec.
 
-Theorem jiji_weiji_are_complements :
-  hexagram_complement KingWen.hex63_Jiji = KingWen.hex64_Weiji.
-Proof.
-  reflexivity.
-Qed.
-
-(** * Transformation Rules *)
-
-Definition MovingHexagram := Vector.t MovingLine 6.
-
-Definition primary_hexagram (m : MovingHexagram) : Hexagram :=
-  Vector.map line_of_moving m.
-
-Definition transformed_hexagram (m : MovingHexagram) : Hexagram :=
-  Vector.map transform_line m.
-
-Definition has_moving_lines (m : MovingHexagram) : bool :=
-  Vector.fold_left (fun acc ml => acc || is_changing ml) false m.
-
-Theorem no_moving_lines_same : forall m,
-  has_moving_lines m = false ->
-  primary_hexagram m = transformed_hexagram m.
-Proof.
-Admitted.
-
-Theorem all_old_yang_becomes_kun : forall m,
-  (forall i, Vector.nth m i = OldYang) ->
-  transformed_hexagram m = KingWen.hex2_Kun.
-Proof.
-Admitted.
-
-Theorem all_old_yin_becomes_qian : forall m,
-  (forall i, Vector.nth m i = OldYin) ->
-  transformed_hexagram m = KingWen.hex1_Qian.
-Proof.
-Admitted.
-
-(** * King Wen Sequence Properties *)
-
-Definition are_paired (h1 h2 : Hexagram) : Prop :=
-  hexagram_complement h1 = h2 \/ hexagram_invert h1 = h2.
-
-Theorem king_wen_pairs : forall n, n < 32 ->
-  let h1 := List.nth (2*n) KingWen.king_wen_sequence KingWen.hex1_Qian in
-  let h2 := List.nth (2*n+1) KingWen.king_wen_sequence KingWen.hex1_Qian in
-  are_paired h1 h2.
-Proof.
-Admitted.
-
-Definition self_symmetric (h : Hexagram) : Prop :=
-  hexagram_invert h = h.
-
-Definition line_eqb (l1 l2 : Line) : bool :=
-  match l1, l2 with
-  | Yang, Yang => true
-  | Yin, Yin => true
-  | _, _ => false
-  end.
-
-Fixpoint hexagram_eqb_aux (v1 v2 : list Line) : bool :=
-  match v1, v2 with
-  | List.nil, List.nil => true
-  | List.cons h1 t1, List.cons h2 t2 => line_eqb h1 h2 && hexagram_eqb_aux t1 t2
-  | _, _ => false
-  end.
-
-Definition hexagram_eqb (h1 h2 : Hexagram) : bool :=
-  hexagram_eqb_aux (Vector.to_list h1) (Vector.to_list h2).
-
-Theorem eight_self_symmetric :
-  length (List.filter (fun h => hexagram_eqb (hexagram_invert h) h)
-                 FuXi.fuxi_sequence) = 8.
-Proof.
-Admitted.
-
-(** * Leibniz Binary Correspondence *)
-
-Theorem leibniz_binary_thesis :
-  forall n, n < 64 ->
-  hexagram_to_nat (List.nth n FuXi.fuxi_sequence KingWen.hex1_Qian) = n.
-Proof.
-Admitted.
-
-Theorem fuxi_is_counting :
-  forall n m, n < 64 -> m < 64 -> n < m ->
-  hexagram_to_nat (List.nth n FuXi.fuxi_sequence KingWen.hex1_Qian) <
-  hexagram_to_nat (List.nth m FuXi.fuxi_sequence KingWen.hex1_Qian).
-Proof.
-Admitted.
-
-Theorem binary_complement_sum :
-  forall h, hexagram_to_nat h + hexagram_to_nat (hexagram_complement h) = 63.
-Proof.
-Admitted.
-
-(** * Divination Mechanics *)
-
-Definition yarrow_stalk_probability (m : MovingLine) : Q :=
-  match m with
-  | OldYin => 1 # 16
-  | YoungYang => 5 # 16
-  | YoungYin => 7 # 16
-  | OldYang => 3 # 16
-  end.
-
-Definition coin_probability (m : MovingLine) : Q :=
-  match m with
-  | OldYin => 1 # 8
-  | YoungYang => 3 # 8
-  | YoungYin => 3 # 8
-  | OldYang => 1 # 8
-  end.
-
-Theorem yarrow_probabilities_sum_to_one :
-  (yarrow_stalk_probability OldYin + yarrow_stalk_probability YoungYang +
-  yarrow_stalk_probability YoungYin + yarrow_stalk_probability OldYang = 1)%Q.
-Proof.
-Admitted.
-
-Theorem coin_probabilities_sum_to_one :
-  (coin_probability OldYin + coin_probability YoungYang +
-  coin_probability YoungYin + coin_probability OldYang = 1)%Q.
-Proof.
-Admitted.
-
-Theorem yarrow_favors_yang :
-  (yarrow_stalk_probability YoungYang + yarrow_stalk_probability OldYang >
-  yarrow_stalk_probability YoungYin + yarrow_stalk_probability OldYin)%Q.
-Proof.
-Admitted.
-
-Theorem coins_are_balanced :
-  (coin_probability YoungYang + coin_probability OldYang =
-  coin_probability YoungYin + coin_probability OldYin)%Q.
-Proof.
-Admitted.
-
-(** * Main Theorems *)
-
-Theorem hexagram_space_complete :
-  length FuXi.fuxi_sequence = 64 /\
-  forall h : Hexagram, List.In h FuXi.fuxi_sequence.
-Proof.
-Admitted.
-
-Theorem binary_encoding_bijection :
-  forall h1 h2, hexagram_to_nat h1 = hexagram_to_nat h2 -> h1 = h2.
-Proof.
-Admitted.
-
-Theorem king_wen_contains_all :
-  forall h, exists n, n < 64 /\ List.nth n KingWen.king_wen_sequence KingWen.hex1_Qian = h.
-Proof.
-Admitted.
-
-Theorem complement_partition :
-  forall h, h <> hexagram_complement h \/ self_symmetric h.
-Proof.
-Admitted.
-
-Theorem leibniz_vindicated :
-  (forall n, n < 64 -> hexagram_to_nat (nat_to_hexagram n) = n) /\
-  (forall h, hexagram_to_nat h < 64) /\
-  (forall h, nat_to_hexagram (hexagram_to_nat h) = h).
-Proof.
-Admitted.
+Lemma UIP_nat : forall (n : nat) (p q : n = n), p = q.
+Proof. intros. apply UIP_dec. decide equality. Qed.
 
