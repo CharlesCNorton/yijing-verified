@@ -8,8 +8,8 @@
 (*     with Joachim Bouvet. Proves properties of the King Wen sequence        *)
 (*     and derives the bagua trigram symmetries.                              *)
 (*                                                                            *)
-(*     "The I Ching is the most ancient of classics, and contains the         *)
-(*     origin of the binary arithmetic which I have discovered."              *)
+(*     [The I Ching is the most ancient of classics, and contains the         *)
+(*     origin of the binary arithmetic which I have discovered.]              *)
 (*     -- Gottfried Wilhelm Leibniz, letter to Duke Rudolph August, 1697      *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
@@ -40,7 +40,7 @@
 
     ** Leibniz Sources
 
-    "Explication de l'Arithmetique Binaire" (1703)
+    Explication de l Arithmetique Binaire (1703)
     Correspondence with Joachim Bouvet, S.J. (1701-1703)
     Letter to Duke Rudolph August of Brunswick-Wolfenbuttel (1697)
 
@@ -56,14 +56,21 @@ Require Import Coq.Bool.Bool.
 Require Import Coq.Arith.Arith.
 Require Import Coq.NArith.BinNat.
 Require Import Coq.Vectors.Vector.
+Require Import Coq.QArith.QArith.
 Import ListNotations.
 Import VectorNotations.
+Open Scope nat_scope.
 
 (** * Fundamental Types *)
 
 Inductive Line : Type :=
   | Yang : Line      (* solid line, male, light, active *)
   | Yin : Line.      (* broken line, female, dark, receptive *)
+
+Definition Line_dec : forall l1 l2 : Line, {l1 = l2} + {l1 <> l2}.
+Proof.
+  intros [] []; (left; reflexivity) || (right; discriminate).
+Defined.
 
 Inductive MovingLine : Type :=
   | OldYin : MovingLine     (* 6: changing yin, becomes yang *)
@@ -149,7 +156,7 @@ Proof. reflexivity. Qed.
 Theorem kun_qian_complement : trigram_complement Kun = Qian.
 Proof. reflexivity. Qed.
 
-Theorem complement_involution : forall t, trigram_complement (trigram_complement t) = t.
+Theorem trigram_complement_involution : forall t, trigram_complement (trigram_complement t) = t.
 Proof.
 Admitted.
 
@@ -233,10 +240,10 @@ End KingWen.
 Module FuXi.
 
   Definition fuxi_sequence : list Hexagram :=
-    map nat_to_hexagram (seq 0 64).
+    List.map nat_to_hexagram (seq 0 64).
 
   Theorem fuxi_is_binary_order : forall n, n < 64 ->
-    hexagram_to_nat (nth n fuxi_sequence KingWen.hex1_Qian) = n.
+    hexagram_to_nat (List.nth n fuxi_sequence KingWen.hex1_Qian) = n.
   Proof.
   Admitted.
 
@@ -266,7 +273,7 @@ Definition hexagram_nuclear (h : Hexagram) : Hexagram :=
    Vector.nth h (Fin.FS (Fin.FS (Fin.FS Fin.F1)));
    Vector.nth h (Fin.FS (Fin.FS (Fin.FS (Fin.FS Fin.F1))))].
 
-Theorem complement_involution : forall h,
+Theorem hexagram_complement_involution : forall h,
   hexagram_complement (hexagram_complement h) = h.
 Proof.
 Admitted.
@@ -330,8 +337,8 @@ Definition are_paired (h1 h2 : Hexagram) : Prop :=
   hexagram_complement h1 = h2 \/ hexagram_invert h1 = h2.
 
 Theorem king_wen_pairs : forall n, n < 32 ->
-  let h1 := nth (2*n) KingWen.king_wen_sequence KingWen.hex1_Qian in
-  let h2 := nth (2*n+1) KingWen.king_wen_sequence KingWen.hex1_Qian in
+  let h1 := List.nth (2*n) KingWen.king_wen_sequence KingWen.hex1_Qian in
+  let h2 := List.nth (2*n+1) KingWen.king_wen_sequence KingWen.hex1_Qian in
   are_paired h1 h2.
 Proof.
 Admitted.
@@ -339,9 +346,25 @@ Admitted.
 Definition self_symmetric (h : Hexagram) : Prop :=
   hexagram_invert h = h.
 
+Definition line_eqb (l1 l2 : Line) : bool :=
+  match l1, l2 with
+  | Yang, Yang => true
+  | Yin, Yin => true
+  | _, _ => false
+  end.
+
+Fixpoint hexagram_eqb_aux (v1 v2 : list Line) : bool :=
+  match v1, v2 with
+  | List.nil, List.nil => true
+  | List.cons h1 t1, List.cons h2 t2 => line_eqb h1 h2 && hexagram_eqb_aux t1 t2
+  | _, _ => false
+  end.
+
+Definition hexagram_eqb (h1 h2 : Hexagram) : bool :=
+  hexagram_eqb_aux (Vector.to_list h1) (Vector.to_list h2).
+
 Theorem eight_self_symmetric :
-  length (filter (fun h => if Vector.eq_dec _ Line_dec (hexagram_invert h) h
-                           then true else false)
+  length (List.filter (fun h => hexagram_eqb (hexagram_invert h) h)
                  FuXi.fuxi_sequence) = 8.
 Proof.
 Admitted.
@@ -350,14 +373,14 @@ Admitted.
 
 Theorem leibniz_binary_thesis :
   forall n, n < 64 ->
-  hexagram_to_nat (nth n FuXi.fuxi_sequence KingWen.hex1_Qian) = n.
+  hexagram_to_nat (List.nth n FuXi.fuxi_sequence KingWen.hex1_Qian) = n.
 Proof.
 Admitted.
 
 Theorem fuxi_is_counting :
   forall n m, n < 64 -> m < 64 -> n < m ->
-  hexagram_to_nat (nth n FuXi.fuxi_sequence KingWen.hex1_Qian) <
-  hexagram_to_nat (nth m FuXi.fuxi_sequence KingWen.hex1_Qian).
+  hexagram_to_nat (List.nth n FuXi.fuxi_sequence KingWen.hex1_Qian) <
+  hexagram_to_nat (List.nth m FuXi.fuxi_sequence KingWen.hex1_Qian).
 Proof.
 Admitted.
 
@@ -385,26 +408,26 @@ Definition coin_probability (m : MovingLine) : Q :=
   end.
 
 Theorem yarrow_probabilities_sum_to_one :
-  yarrow_stalk_probability OldYin + yarrow_stalk_probability YoungYang +
-  yarrow_stalk_probability YoungYin + yarrow_stalk_probability OldYang = 1.
+  (yarrow_stalk_probability OldYin + yarrow_stalk_probability YoungYang +
+  yarrow_stalk_probability YoungYin + yarrow_stalk_probability OldYang = 1)%Q.
 Proof.
 Admitted.
 
 Theorem coin_probabilities_sum_to_one :
-  coin_probability OldYin + coin_probability YoungYang +
-  coin_probability YoungYin + coin_probability OldYang = 1.
+  (coin_probability OldYin + coin_probability YoungYang +
+  coin_probability YoungYin + coin_probability OldYang = 1)%Q.
 Proof.
 Admitted.
 
 Theorem yarrow_favors_yang :
-  yarrow_stalk_probability YoungYang + yarrow_stalk_probability OldYang >
-  yarrow_stalk_probability YoungYin + yarrow_stalk_probability OldYin.
+  (yarrow_stalk_probability YoungYang + yarrow_stalk_probability OldYang >
+  yarrow_stalk_probability YoungYin + yarrow_stalk_probability OldYin)%Q.
 Proof.
 Admitted.
 
 Theorem coins_are_balanced :
-  coin_probability YoungYang + coin_probability OldYang =
-  coin_probability YoungYin + coin_probability OldYin.
+  (coin_probability YoungYang + coin_probability OldYang =
+  coin_probability YoungYin + coin_probability OldYin)%Q.
 Proof.
 Admitted.
 
@@ -412,7 +435,7 @@ Admitted.
 
 Theorem hexagram_space_complete :
   length FuXi.fuxi_sequence = 64 /\
-  forall h : Hexagram, In h FuXi.fuxi_sequence.
+  forall h : Hexagram, List.In h FuXi.fuxi_sequence.
 Proof.
 Admitted.
 
@@ -422,7 +445,7 @@ Proof.
 Admitted.
 
 Theorem king_wen_contains_all :
-  forall h, exists n, n < 64 /\ nth n KingWen.king_wen_sequence KingWen.hex1_Qian = h.
+  forall h, exists n, n < 64 /\ List.nth n KingWen.king_wen_sequence KingWen.hex1_Qian = h.
 Proof.
 Admitted.
 
@@ -438,9 +461,3 @@ Theorem leibniz_vindicated :
 Proof.
 Admitted.
 
-(** * Line Decidability *)
-
-Definition Line_dec : forall l1 l2 : Line, {l1 = l2} + {l1 <> l2}.
-Proof.
-  intros [] []; (left; reflexivity) || (right; discriminate).
-Defined.
