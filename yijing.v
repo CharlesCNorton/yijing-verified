@@ -65,6 +65,13 @@
 
     15. Fu Xi sequence bijection: complete the bijection theorem (both
         directions, not just fuxi_is_binary_order).
+
+    16. Document bit significance convention: explicitly state that vector
+        position 0 (Fin.F1) = least significant bit (bottom line) and
+        position 5 = most significant bit (top line).
+
+    17. Remove unused definitions: Line_dec and UIP_nat appear to be
+        scaffolding artifacts not used in subsequent proofs.
 *)
 
 (** * Citations and Primary Sources
